@@ -1,12 +1,10 @@
 -
-  name: 骑手登录
+  name: 万能验证码
   request:
-    method: post
-    path: /api/rider/smscode/login
+    method: get
+    path: /api/admin/get/almighty/code
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36
       deviceId: '1254'
       Content-Type: application/json
-    params:
-      smsCode:
-      userName: '15400010001'
+    params: "none"
