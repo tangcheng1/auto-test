@@ -8,5 +8,6 @@
       deviceId: '1254'
       Content-Type: application/json
     params:
-      smsCode:
+      smsCode: none
       userName: '15400010001'
+

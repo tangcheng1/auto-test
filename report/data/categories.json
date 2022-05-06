@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '1' == '2'\n  - 2\n  + 1",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "8151ed582ebb5aa4",
+        "parentUid" : "08d615835b2c55b7c8abf72276fee4fa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651823349472,
+          "stop" : 1651823349643,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 36,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "08d615835b2c55b7c8abf72276fee4fa"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

@@ -1,10 +1,8 @@
 import json
-import os
-
+from tools.logger import logger
 import xlrd
-import yaml
 from requests import request
-from pathlib import Path
+from tools.yaml_util import YamlUtil
 
 
 # 读取excel
@@ -28,42 +26,23 @@ def excel_read():
     # print(list)
     return list
 
-
-# 读取yaml
-def yaml_read(yamlfileDir, yamlfileName):
-    # 根据文件路径和名称获取数据
-    work = f"{str(Path(__file__).parent.parent)}" + "/" + yamlfileDir + "/" + yamlfileName
-    # print(work)
-    with open(work, encoding='utf-8', ) as f:
-        value = yaml.load(f, Loader=yaml.FullLoader)
-        # print(value["request"])
-    return value
-
-
-# yaml的写入
-def yaml_write(data, fileDir, fileName):
-    writework = f"{str(Path(__file__).parent.parent)}" + "/" + fileDir + "/" + fileName
-    with open(writework, encoding="utf-8", mode="a")as f:
-        value = yaml.dump(data, stream=f, allow_unicode=True)
-    return value
-
-
 # 重写post 和get请求，方便自动去请求
-def sendRequest(method, url, headers, data):
+def sendRequest(method, url, data,headers,**kwargs):
+
     # 把请求方法改成小写
     method = str(method).lower()
     rep = None
     # get请求以params接参数
+    request_log(method,url,data,headers)
     if method == "get":
-        rep = request(method=method, url=url, params=data, headers=headers)
+        rep = request(method=method, url=url, params=data, headers=headers,**kwargs)
     # post请求以data接参数,原因：data只能传输简单的只有键值对的dict或者str格式的数据，json一般只能传输dict格式，简单复杂的都可以
     # data可以满足多种格式，那我们只需把都转成str类型
     elif method == "post":
         # 把键值对转换成str类型
-        rep = request(method=method, url=url, data=json.dumps(data), headers=headers)
-        print(rep.request.url)
-        print(rep.request.method)
-        print(rep.request.body)
+        data = json.dumps(data)
+        rep = request(method=method, url=url, data=data, headers=headers,**kwargs)
+    logger.info("返回的body ==>> {}".format(rep.json()))
     return rep.json()
 
 
@@ -79,8 +58,21 @@ def assignment_yamlparams(kwargs):
                 kwargs[key] = getattr(key)
     return kwargs
 
+def request_log( method, url, data=None,  headers=None, files=None, cookies=None,**kwargs):
+    logger.info("接口请求地址 ==>> {}".format(url))
+    logger.info("接口请求方式 ==>> {}".format(method))
+    logger.info("接口请求体body ==>> {}".format(json.dumps(data, indent=4, ensure_ascii=False)))
+    # Python3中，json在做dumps操作时，会将中文转换成unicode编码，因此设置 ensure_ascii=False
+    logger.info("接口请求头 ==>> {}".format(headers, indent=4, ensure_ascii=False))
+    # logger.info("接口请求 params 参数 ==>> {}".format(complexjson.dumps(params, indent=4, ensure_ascii=False)))
+    #
+    #
+    # logger.info("接口上传附件 files 参数 ==>> {}".format(files))
+    # logger.info("接口 cookies 参数 ==>> {}".format(complexjson.dumps(cookies, indent=4, ensure_ascii=False)))
 
+    # (method=method, url=url, data=data, headers=headers, ** kwargs)
 if __name__ == '__main__':
-    work = yaml_read("data", "login.yaml")
+    work = YamlUtil().yaml_read("data", "login.yaml")
     # work =f"{str(Path(__file__).parent.parent)}/data/login.yaml"
     print(work)
+

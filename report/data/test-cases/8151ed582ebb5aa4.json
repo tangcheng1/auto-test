@@ -1,0 +1,402 @@
+{
+  "uid" : "8151ed582ebb5aa4",
+  "name" : "test_almightycode[caseinfo0]",
+  "fullName" : "test_case.login_test.Testwork#test_almightycode",
+  "historyId" : "6e7af39bb606afac8bf5087e4fe0bc35",
+  "time" : {
+    "start" : 1651823349472,
+    "stop" : 1651823349643,
+    "duration" : 171
+  },
+  "description" : "配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value",
+  "descriptionHtml" : "<p>配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '1' == '2'\n  - 2\n  + 1",
+  "statusTrace" : "self = <test_case.login_test.Testwork object at 0x105a72b20>\ncaseinfo = {'name': '万能验证码', 'request': {'headers': {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT 1...840.99 Safari/537.36', 'deviceId': '1254'}, 'method': 'get', 'params': 'none', 'path': '/api/admin/get/almighty/code'}}\n\n    @allure.story('验证码接口')\n    @allure.description(\"配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value\")\n    @pytest.mark.parametrize(\"caseinfo\", YamlUtil().yaml_read(\"data\", \"almightycode.yaml\"))\n    def test_almightycode(self, caseinfo):\n        # 获取ymal\n        value = assignment_yamlparams(caseinfo['request'])\n        url = URL + value['path']\n        response = sendRequest(value['method'], url, value['params'], value['headers'])\n        almighty_code = YamlUtil().yaml_write({\"almighty_code\": response[\"data\"]}, \"data\", \"extract.yaml\")\n>       assert response[\"code\"] == \"2\"\nE       AssertionError: assert '1' == '2'\nE         - 2\nE         + 1\n\ntest_case/login_test.py:29: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 36,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1651823349471,
+      "stop" : 1651823349471,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '1' == '2'\n  - 2\n  + 1",
+    "statusTrace" : "self = <test_case.login_test.Testwork object at 0x105a72b20>\ncaseinfo = {'name': '万能验证码', 'request': {'headers': {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT 1...840.99 Safari/537.36', 'deviceId': '1254'}, 'method': 'get', 'params': 'none', 'path': '/api/admin/get/almighty/code'}}\n\n    @allure.story('验证码接口')\n    @allure.description(\"配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value\")\n    @pytest.mark.parametrize(\"caseinfo\", YamlUtil().yaml_read(\"data\", \"almightycode.yaml\"))\n    def test_almightycode(self, caseinfo):\n        # 获取ymal\n        value = assignment_yamlparams(caseinfo['request'])\n        url = URL + value['path']\n        response = sendRequest(value['method'], url, value['params'], value['headers'])\n        almighty_code = YamlUtil().yaml_write({\"almighty_code\": response[\"data\"]}, \"data\", \"extract.yaml\")\n>       assert response[\"code\"] == \"2\"\nE       AssertionError: assert '1' == '2'\nE         - 2\nE         + 1\n\ntest_case/login_test.py:29: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a26982c15ae5597f",
+      "name" : "log",
+      "source" : "a26982c15ae5597f.txt",
+      "type" : "text/plain",
+      "size" : 639
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证码接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "login_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testwork"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "17379-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.login_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c247703a53b955a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651823262566,
+        "stop" : 1651823262746,
+        "duration" : 180
+      }
+    }, {
+      "uid" : "855ded0f8b498424",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651823167192,
+        "stop" : 1651823167345,
+        "duration" : 153
+      }
+    }, {
+      "uid" : "b6062a589df1d80f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651822047766,
+        "stop" : 1651822047931,
+        "duration" : 165
+      }
+    }, {
+      "uid" : "a4c93cd2c0e179ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651821637039,
+        "stop" : 1651821637173,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "234f81d0c5b6e07c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651821596272,
+        "stop" : 1651821596427,
+        "duration" : 155
+      }
+    }, {
+      "uid" : "445becd810851389",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651821442665,
+        "stop" : 1651821442837,
+        "duration" : 172
+      }
+    }, {
+      "uid" : "655ee53752dff14f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651820785144,
+        "stop" : 1651820785297,
+        "duration" : 153
+      }
+    }, {
+      "uid" : "dc5aeca9e15986c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651820558306,
+        "stop" : 1651820558471,
+        "duration" : 165
+      }
+    }, {
+      "uid" : "3e07d65a2849acc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651819472963,
+        "stop" : 1651819473108,
+        "duration" : 145
+      }
+    }, {
+      "uid" : "e2bf4384b4d27c86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651819406508,
+        "stop" : 1651819406681,
+        "duration" : 173
+      }
+    }, {
+      "uid" : "5556ca9cba9ef0f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651819036699,
+        "stop" : 1651819036831,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "c52932bca01eb11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651818977388,
+        "stop" : 1651818977529,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "cb1340da82fa360d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651818513736,
+        "stop" : 1651818513875,
+        "duration" : 139
+      }
+    }, {
+      "uid" : "850fda8016a19be6",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'work' is not defined",
+      "time" : {
+        "start" : 1651818459272,
+        "stop" : 1651818460641,
+        "duration" : 1369
+      }
+    }, {
+      "uid" : "2e756cc3b608d768",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651818047021,
+        "stop" : 1651818047187,
+        "duration" : 166
+      }
+    }, {
+      "uid" : "90569175f6a7b1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651817959487,
+        "stop" : 1651817959629,
+        "duration" : 142
+      }
+    }, {
+      "uid" : "ec89f4fc4bb5c3f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651817617133,
+        "stop" : 1651817617987,
+        "duration" : 854
+      }
+    }, {
+      "uid" : "a816a47160fd0382",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'tools' has no attribute 'RestClient'",
+      "time" : {
+        "start" : 1651817243983,
+        "stop" : 1651817243983,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6ed814fa37f2d933",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808992314,
+        "stop" : 1651808992448,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "2b334d4f9ef41c9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808965856,
+        "stop" : 1651808966007,
+        "duration" : 151
+      }
+    }, {
+      "uid" : "8e6ef66269f7bf53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808925703,
+        "stop" : 1651808925868,
+        "duration" : 165
+      }
+    }, {
+      "uid" : "9b69f4efe2acc6f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808881015,
+        "stop" : 1651808881157,
+        "duration" : 142
+      }
+    }, {
+      "uid" : "f47716be7ba53576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808842657,
+        "stop" : 1651808842836,
+        "duration" : 179
+      }
+    }, {
+      "uid" : "6ef874de1d00d9a6",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'params' is not defined",
+      "time" : {
+        "start" : 1651808816259,
+        "stop" : 1651808816259,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5073feb1de083168",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808672458,
+        "stop" : 1651808672599,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "a20ac8c9d2291ccd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808653751,
+        "stop" : 1651808653936,
+        "duration" : 185
+      }
+    }, {
+      "uid" : "b714a69ac0cd2ff6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808565054,
+        "stop" : 1651808565220,
+        "duration" : 166
+      }
+    }, {
+      "uid" : "fae9effa0370ee0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651808337872,
+        "stop" : 1651808338045,
+        "duration" : 173
+      }
+    }, {
+      "uid" : "2981e4cee900585d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: Object of type module is not JSON serializable",
+      "time" : {
+        "start" : 1651808231545,
+        "stop" : 1651808231546,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b22057e571667811",
+      "status" : "broken",
+      "statusDetails" : "TypeError: Object of type module is not JSON serializable",
+      "time" : {
+        "start" : 1651808170478,
+        "stop" : 1651808170478,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f937a6779d8d698f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: Object of type module is not JSON serializable",
+      "time" : {
+        "start" : 1651808088152,
+        "stop" : 1651808088153,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "daea5325afd6afb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651807914614,
+        "stop" : 1651807914763,
+        "duration" : 149
+      }
+    }, {
+      "uid" : "ac064895a4eed0a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651807906133,
+        "stop" : 1651807906309,
+        "duration" : 176
+      }
+    }, {
+      "uid" : "4cf591770b7031f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651807801441,
+        "stop" : 1651807801613,
+        "duration" : 172
+      }
+    }, {
+      "uid" : "547e4b628edbc58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651807314463,
+        "stop" : 1651807315273,
+        "duration" : 810
+      }
+    }, {
+      "uid" : "a6dbff9e3f585be6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1651806920041,
+        "stop" : 1651806920201,
+        "duration" : 160
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8151ed582ebb5aa4.json",
+  "parameterValues" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+}

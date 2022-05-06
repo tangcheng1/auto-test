@@ -1,0 +1,3 @@
+INFO     log:base_requests.py:74 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+INFO     log:base_requests.py:75 接口请求方式 ==>> get
+INFO     log:base_requests.py:77 接口请求头 ==>> null

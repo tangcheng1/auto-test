@@ -1,0 +1,99 @@
+{
+  "uid" : "b22057e571667811",
+  "name" : "test_almightycode[caseinfo0]",
+  "fullName" : "test_case.login_test.Testwork#test_almightycode",
+  "historyId" : "6e7af39bb606afac8bf5087e4fe0bc35",
+  "time" : {
+    "start" : 1651808170478,
+    "stop" : 1651808170478,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: Object of type module is not JSON serializable",
+  "statusTrace" : "self = <test_case.login_test.Testwork object at 0x109b6f2e0>\ncaseinfo = {'name': '万能验证码', 'request': {'headers': {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT 1...840.99 Safari/537.36', 'deviceId': '1254'}, 'method': 'get', 'params': 'none', 'path': '/api/admin/get/almighty/code'}}\n\n    @allure.story('验证码接口')\n    @pytest.mark.parametrize(\"caseinfo\", YamlUtil().yaml_read(\"data\", \"almightycode.yaml\"))\n    def test_almightycode(self, caseinfo):\n        # 获取ymal\n        value = assignment_yamlparams(caseinfo['request'])\n        url = URL + value['path']\n>       response = sendRequest(value['method'], url, value['headers'], value['params'])\n\ntest_case/login_test.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntools/base_requests.py:47: in sendRequest\n    request_log(url, method, data, json, params, headers, files, cookies)\ntools/base_requests.py:81: in request_log\n    logger.info(\"接口请求体 data 参数 ==>> {}\".format(complexjson.dumps(data, indent=4, ensure_ascii=False)))\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py:234: in dumps\n    return cls(\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:201: in encode\n    chunks = list(chunks)\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:438: in _iterencode\n    o = _default(o)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <json.encoder.JSONEncoder object at 0x109bb3f70>\no = <module 'json' from '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py'>\n\n    def default(self, o):\n        \"\"\"Implement this method in a subclass such that it returns\n        a serializable object for ``o``, or calls the base implementation\n        (to raise a ``TypeError``).\n    \n        For example, to support arbitrary iterators, you could\n        implement default like this::\n    \n            def default(self, o):\n                try:\n                    iterable = iter(o)\n                except TypeError:\n                    pass\n                else:\n                    return list(iterable)\n                # Let the base class default method raise the TypeError\n                return JSONEncoder.default(self, o)\n    \n        \"\"\"\n>       raise TypeError(f'Object of type {o.__class__.__name__} '\n                        f'is not JSON serializable')\nE       TypeError: Object of type module is not JSON serializable\n\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:179: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1651808170477,
+      "stop" : 1651808170477,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: Object of type module is not JSON serializable",
+    "statusTrace" : "self = <test_case.login_test.Testwork object at 0x109b6f2e0>\ncaseinfo = {'name': '万能验证码', 'request': {'headers': {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Windows NT 1...840.99 Safari/537.36', 'deviceId': '1254'}, 'method': 'get', 'params': 'none', 'path': '/api/admin/get/almighty/code'}}\n\n    @allure.story('验证码接口')\n    @pytest.mark.parametrize(\"caseinfo\", YamlUtil().yaml_read(\"data\", \"almightycode.yaml\"))\n    def test_almightycode(self, caseinfo):\n        # 获取ymal\n        value = assignment_yamlparams(caseinfo['request'])\n        url = URL + value['path']\n>       response = sendRequest(value['method'], url, value['headers'], value['params'])\n\ntest_case/login_test.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntools/base_requests.py:47: in sendRequest\n    request_log(url, method, data, json, params, headers, files, cookies)\ntools/base_requests.py:81: in request_log\n    logger.info(\"接口请求体 data 参数 ==>> {}\".format(complexjson.dumps(data, indent=4, ensure_ascii=False)))\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py:234: in dumps\n    return cls(\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:201: in encode\n    chunks = list(chunks)\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:438: in _iterencode\n    o = _default(o)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <json.encoder.JSONEncoder object at 0x109bb3f70>\no = <module 'json' from '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py'>\n\n    def default(self, o):\n        \"\"\"Implement this method in a subclass such that it returns\n        a serializable object for ``o``, or calls the base implementation\n        (to raise a ``TypeError``).\n    \n        For example, to support arbitrary iterators, you could\n        implement default like this::\n    \n            def default(self, o):\n                try:\n                    iterable = iter(o)\n                except TypeError:\n                    pass\n                else:\n                    return list(iterable)\n                # Let the base class default method raise the TypeError\n                return JSONEncoder.default(self, o)\n    \n        \"\"\"\n>       raise TypeError(f'Object of type {o.__class__.__name__} '\n                        f'is not JSON serializable')\nE       TypeError: Object of type module is not JSON serializable\n\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py:179: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a01e331fcc23c478",
+      "name" : "log",
+      "source" : "a01e331fcc23c478.txt",
+      "type" : "text/plain",
+      "size" : 452
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证码接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "login_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testwork"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "15624-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.login_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b22057e571667811.json",
+  "parameterValues" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+}

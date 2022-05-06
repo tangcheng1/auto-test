@@ -1,0 +1,7 @@
+INFO     log:base_requests.py:77 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+INFO     log:base_requests.py:78 接口请求方式 ==>> post
+INFO     log:base_requests.py:79 接口请求体body ==>> {
+    "smsCode": "293279",
+    "userName": "15400010001"
+}
+INFO     log:base_requests.py:81 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}

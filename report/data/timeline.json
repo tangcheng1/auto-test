@@ -1,0 +1,1398 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "xudeMac-mini.local",
+    "children" : [ {
+      "name" : "15651-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "2981e4cee900585d",
+        "parentUid" : "8fe9cdfcb67552edd98d905b9593cd75",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808231545,
+          "stop" : 1651808231546,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "9c41585f98cf913d",
+        "parentUid" : "8fe9cdfcb67552edd98d905b9593cd75",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808231615,
+          "stop" : 1651808231615,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "8fe9cdfcb67552edd98d905b9593cd75"
+    }, {
+      "name" : "16899-MainThread",
+      "children" : [ {
+        "name" : "验证码接口",
+        "uid" : "445becd810851389",
+        "parentUid" : "2b233300bf61c6a06e88780e7a13ecc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821442665,
+          "stop" : 1651821442837,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "骑手登录接口",
+        "uid" : "daf70f1822e7ac2f",
+        "parentUid" : "2b233300bf61c6a06e88780e7a13ecc5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651821442839,
+          "stop" : 1651821442987,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "2b233300bf61c6a06e88780e7a13ecc5"
+    }, {
+      "name" : "15555-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "ac064895a4eed0a3",
+        "parentUid" : "1a8c7089c1be807c7017cb3df2cfd872",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807906133,
+          "stop" : 1651807906309,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "1a8c7089c1be807c7017cb3df2cfd872"
+    }, {
+      "name" : "16555-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "de1aca6ce8b469e1",
+        "parentUid" : "f14adde836bd6d96dbe21cfe87ec8ba2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819036834,
+          "stop" : 1651819036976,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "5556ca9cba9ef0f0",
+        "parentUid" : "f14adde836bd6d96dbe21cfe87ec8ba2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819036699,
+          "stop" : 1651819036831,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "f14adde836bd6d96dbe21cfe87ec8ba2"
+    }, {
+      "name" : "16285-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "ff38b9ac79e3068f",
+        "parentUid" : "3dd80b7d958bc15536056ea14608a1e6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651817244030,
+          "stop" : 1651817244030,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "a816a47160fd0382",
+        "parentUid" : "3dd80b7d958bc15536056ea14608a1e6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651817243983,
+          "stop" : 1651817243983,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "3dd80b7d958bc15536056ea14608a1e6"
+    }, {
+      "name" : "16325-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "ec89f4fc4bb5c3f4",
+        "parentUid" : "51b9b08fe090d74c7c9058e9f00b8e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817617133,
+          "stop" : 1651817617987,
+          "duration" : 854
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "75d10fb465c135be",
+        "parentUid" : "51b9b08fe090d74c7c9058e9f00b8e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817617990,
+          "stop" : 1651817618133,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "51b9b08fe090d74c7c9058e9f00b8e37"
+    }, {
+      "name" : "17273-MainThread",
+      "children" : [ {
+        "name" : "验证码接口",
+        "uid" : "855ded0f8b498424",
+        "parentUid" : "0bfbfe4b22ec75c6ee436d31414b6d69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823167192,
+          "stop" : 1651823167345,
+          "duration" : 153
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "骑手登录接口",
+        "uid" : "755ab811fbd3664e",
+        "parentUid" : "0bfbfe4b22ec75c6ee436d31414b6d69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823167347,
+          "stop" : 1651823167492,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "0bfbfe4b22ec75c6ee436d31414b6d69"
+    }, {
+      "name" : "16924-MainThread",
+      "children" : [ {
+        "name" : "验证码接口",
+        "uid" : "234f81d0c5b6e07c",
+        "parentUid" : "e0af3a6ec8643022a371945e8a2af3f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821596272,
+          "stop" : 1651821596427,
+          "duration" : 155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "骑手登录接口",
+        "uid" : "cca4a358c70d0129",
+        "parentUid" : "e0af3a6ec8643022a371945e8a2af3f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821596430,
+          "stop" : 1651821596584,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "e0af3a6ec8643022a371945e8a2af3f7"
+    }, {
+      "name" : "16400-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "abd9c322f3f8ee6d",
+        "parentUid" : "6a12ccd0d066e1c30771b3dfa86cc498",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818047189,
+          "stop" : 1651818047334,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "2e756cc3b608d768",
+        "parentUid" : "6a12ccd0d066e1c30771b3dfa86cc498",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818047021,
+          "stop" : 1651818047187,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "6a12ccd0d066e1c30771b3dfa86cc498"
+    }, {
+      "name" : "17379-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "2491272b01c47f8e",
+        "parentUid" : "c5a972f72555f033397ac335cb2504c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823349697,
+          "stop" : 1651823349847,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 35,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "8151ed582ebb5aa4",
+        "parentUid" : "c5a972f72555f033397ac335cb2504c2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651823349472,
+          "stop" : 1651823349643,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 36,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "c5a972f72555f033397ac335cb2504c2"
+    }, {
+      "name" : "15764-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "5073feb1de083168",
+        "parentUid" : "3e397620b8f5dc0df2920a39604eeb49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808672458,
+          "stop" : 1651808672599,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "8008191d3c0ee397",
+        "parentUid" : "3e397620b8f5dc0df2920a39604eeb49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808672601,
+          "stop" : 1651808672760,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "3e397620b8f5dc0df2920a39604eeb49"
+    }, {
+      "name" : "15827-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "6ae7f2f24336e2e3",
+        "parentUid" : "50b212482b47a1e52201fd1203a37372",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808881159,
+          "stop" : 1651808881300,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "9b69f4efe2acc6f1",
+        "parentUid" : "50b212482b47a1e52201fd1203a37372",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808881015,
+          "stop" : 1651808881157,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "50b212482b47a1e52201fd1203a37372"
+    }, {
+      "name" : "15900-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "6ed814fa37f2d933",
+        "parentUid" : "535d117077440520b8acf058448c28da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808992314,
+          "stop" : 1651808992448,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "fb6b5b80f38f8581",
+        "parentUid" : "535d117077440520b8acf058448c28da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808992450,
+          "stop" : 1651808992588,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "535d117077440520b8acf058448c28da"
+    }, {
+      "name" : "16812-MainThread",
+      "children" : [ {
+        "name" : "验证码接口",
+        "uid" : "655ee53752dff14f",
+        "parentUid" : "34ef64c24a5d8917d9c2adb04e7fd7b4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820785144,
+          "stop" : 1651820785297,
+          "duration" : 153
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "骑手登录接口",
+        "uid" : "335d080b0e335f87",
+        "parentUid" : "34ef64c24a5d8917d9c2adb04e7fd7b4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820785300,
+          "stop" : 1651820785438,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "34ef64c24a5d8917d9c2adb04e7fd7b4"
+    }, {
+      "name" : "15682-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "fae9effa0370ee0d",
+        "parentUid" : "4e9cfb4d186ee53d70c612771dcaf8fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808337872,
+          "stop" : 1651808338045,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "6a1480d398087094",
+        "parentUid" : "4e9cfb4d186ee53d70c612771dcaf8fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808338047,
+          "stop" : 1651808338197,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "4e9cfb4d186ee53d70c612771dcaf8fd"
+    }, {
+      "name" : "16468-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "bb5674fee80a2f09",
+        "parentUid" : "88d97520cad555736e894d7d5166ab2b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818513879,
+          "stop" : 1651818514037,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "cb1340da82fa360d",
+        "parentUid" : "88d97520cad555736e894d7d5166ab2b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818513736,
+          "stop" : 1651818513875,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "88d97520cad555736e894d7d5166ab2b"
+    }, {
+      "name" : "15852-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "4808985b0017d35b",
+        "parentUid" : "e0b5d71e8a2c5cb73bd6ae4cf1af18db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808925870,
+          "stop" : 1651808926019,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "8e6ef66269f7bf53",
+        "parentUid" : "e0b5d71e8a2c5cb73bd6ae4cf1af18db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808925703,
+          "stop" : 1651808925868,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "e0b5d71e8a2c5cb73bd6ae4cf1af18db"
+    }, {
+      "name" : "15599-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "e41807863c722ceb",
+        "parentUid" : "c869175d2116a4ea1e53ca1e13db4f58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808088221,
+          "stop" : 1651808088221,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "f937a6779d8d698f",
+        "parentUid" : "c869175d2116a4ea1e53ca1e13db4f58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808088152,
+          "stop" : 1651808088153,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "c869175d2116a4ea1e53ca1e13db4f58"
+    }, {
+      "name" : "16532-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "c52932bca01eb11",
+        "parentUid" : "24356cf063b949c7eb0b5e627ac5b4b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818977388,
+          "stop" : 1651818977529,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "beff34b100e89a66",
+        "parentUid" : "24356cf063b949c7eb0b5e627ac5b4b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818977531,
+          "stop" : 1651818977668,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "24356cf063b949c7eb0b5e627ac5b4b0"
+    }, {
+      "name" : "15875-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "5c2f3d7af8a3151c",
+        "parentUid" : "01f93db5c2db45372d4754a2aeabb89c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808966009,
+          "stop" : 1651808966151,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "2b334d4f9ef41c9d",
+        "parentUid" : "01f93db5c2db45372d4754a2aeabb89c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808965856,
+          "stop" : 1651808966007,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "01f93db5c2db45372d4754a2aeabb89c"
+    }, {
+      "name" : "15796-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "6ef874de1d00d9a6",
+        "parentUid" : "db1fcca927df394486eb6cd5a2f07975",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808816259,
+          "stop" : 1651808816259,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "1b0482915e917475",
+        "parentUid" : "db1fcca927df394486eb6cd5a2f07975",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808816313,
+          "stop" : 1651808816313,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "db1fcca927df394486eb6cd5a2f07975"
+    }, {
+      "name" : "15746-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "a20ac8c9d2291ccd",
+        "parentUid" : "0b0662e4d28434eaec4d61878d6ecc5d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808653751,
+          "stop" : 1651808653936,
+          "duration" : 185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "243570bb504a082b",
+        "parentUid" : "0b0662e4d28434eaec4d61878d6ecc5d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808653938,
+          "stop" : 1651808654086,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "0b0662e4d28434eaec4d61878d6ecc5d"
+    }, {
+      "name" : "16599-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "be1f07baf16fb69",
+        "parentUid" : "91c30b29c32c1c30456ff2acca996ef0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819406683,
+          "stop" : 1651819406828,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "e2bf4384b4d27c86",
+        "parentUid" : "91c30b29c32c1c30456ff2acca996ef0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819406508,
+          "stop" : 1651819406681,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "91c30b29c32c1c30456ff2acca996ef0"
+    }, {
+      "name" : "16731-MainThread",
+      "children" : [ {
+        "name" : "验证码接口",
+        "uid" : "dc5aeca9e15986c",
+        "parentUid" : "44c067965b0bfd1baeabd052ff008d37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820558306,
+          "stop" : 1651820558471,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "骑手登录接口",
+        "uid" : "38cc462ccd41caf8",
+        "parentUid" : "44c067965b0bfd1baeabd052ff008d37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820558473,
+          "stop" : 1651820558618,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "44c067965b0bfd1baeabd052ff008d37"
+    }, {
+      "name" : "15498-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "4cf591770b7031f0",
+        "parentUid" : "6cef40425a80b2dc62fbbbb529ca54f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807801441,
+          "stop" : 1651807801613,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "427d79791eb5fa23",
+        "parentUid" : "6cef40425a80b2dc62fbbbb529ca54f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807801615,
+          "stop" : 1651807801771,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "6cef40425a80b2dc62fbbbb529ca54f0"
+    }, {
+      "name" : "16376-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "f77c501d67d1b689",
+        "parentUid" : "86c097e643ff111f1af2a39d260d14bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817959633,
+          "stop" : 1651817959784,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "90569175f6a7b1c",
+        "parentUid" : "86c097e643ff111f1af2a39d260d14bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817959487,
+          "stop" : 1651817959629,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "86c097e643ff111f1af2a39d260d14bd"
+    }, {
+      "name" : "15563-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "daea5325afd6afb1",
+        "parentUid" : "057820c526af7d7a97ce68bc6c265cc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807914614,
+          "stop" : 1651807914763,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "7f4d108e65a79b2",
+        "parentUid" : "057820c526af7d7a97ce68bc6c265cc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807914766,
+          "stop" : 1651807914933,
+          "duration" : 167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "057820c526af7d7a97ce68bc6c265cc4"
+    }, {
+      "name" : "15722-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "c597cbd3e41c0fba",
+        "parentUid" : "25c65899285f228c743314a90df64a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808565222,
+          "stop" : 1651808565381,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "b714a69ac0cd2ff6",
+        "parentUid" : "25c65899285f228c743314a90df64a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808565054,
+          "stop" : 1651808565220,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "25c65899285f228c743314a90df64a3b"
+    }, {
+      "name" : "15813-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "77b9f64a0faab3b2",
+        "parentUid" : "fb153c7c853a18000060aaec375b85bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808842839,
+          "stop" : 1651808842995,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "f47716be7ba53576",
+        "parentUid" : "fb153c7c853a18000060aaec375b85bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651808842657,
+          "stop" : 1651808842836,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "fb153c7c853a18000060aaec375b85bc"
+    }, {
+      "name" : "15624-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "b22057e571667811",
+        "parentUid" : "c05231e093b7d89d099f5cad8397c73d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808170478,
+          "stop" : 1651808170478,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "785728775916f7a5",
+        "parentUid" : "c05231e093b7d89d099f5cad8397c73d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651808170550,
+          "stop" : 1651808170550,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "c05231e093b7d89d099f5cad8397c73d"
+    }, {
+      "name" : "17067-MainThread",
+      "children" : [ {
+        "name" : "骑手登录接口",
+        "uid" : "7400ee756bea6fac",
+        "parentUid" : "a148e263ae1c3a50f56467f41a42b0aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822047934,
+          "stop" : 1651822048077,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "验证码接口",
+        "uid" : "b6062a589df1d80f",
+        "parentUid" : "a148e263ae1c3a50f56467f41a42b0aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822047766,
+          "stop" : 1651822047931,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "a148e263ae1c3a50f56467f41a42b0aa"
+    }, {
+      "name" : "16946-MainThread",
+      "children" : [ {
+        "name" : "骑手登录接口",
+        "uid" : "83f45b5560c407e8",
+        "parentUid" : "7d14d7eff945c0b8f679434891d53513",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821637177,
+          "stop" : 1651821637320,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "验证码接口",
+        "uid" : "a4c93cd2c0e179ae",
+        "parentUid" : "7d14d7eff945c0b8f679434891d53513",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821637039,
+          "stop" : 1651821637173,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "7d14d7eff945c0b8f679434891d53513"
+    }, {
+      "name" : "15432-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "a33542088478d95f",
+        "parentUid" : "5497b06cf0fb3897a37804c17e571148",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807315276,
+          "stop" : 1651807315719,
+          "duration" : 443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "547e4b628edbc58",
+        "parentUid" : "5497b06cf0fb3897a37804c17e571148",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651807314463,
+          "stop" : 1651807315273,
+          "duration" : 810
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "5497b06cf0fb3897a37804c17e571148"
+    }, {
+      "name" : "16450-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "850fda8016a19be6",
+        "parentUid" : "96364ad44cc9da4d0a3372035846ee37",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651818459272,
+          "stop" : 1651818460641,
+          "duration" : 1369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "6987f8ca358b13ae",
+        "parentUid" : "96364ad44cc9da4d0a3372035846ee37",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651818460689,
+          "stop" : 1651818460690,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "96364ad44cc9da4d0a3372035846ee37"
+    }, {
+      "name" : "16624-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "8ff52b2c26d95797",
+        "parentUid" : "3a24cfebbd7eb096a9415bb6d5907d3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819473110,
+          "stop" : 1651819473251,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "3e07d65a2849acc2",
+        "parentUid" : "3a24cfebbd7eb096a9415bb6d5907d3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819472963,
+          "stop" : 1651819473108,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "3a24cfebbd7eb096a9415bb6d5907d3b"
+    }, {
+      "name" : "15372-MainThread",
+      "children" : [ {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "a6dbff9e3f585be6",
+        "parentUid" : "47a7baba5d5fdc367359f1d3291f2de5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651806920041,
+          "stop" : 1651806920201,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      }, {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "ab691bec23390f6c",
+        "parentUid" : "47a7baba5d5fdc367359f1d3291f2de5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651806920203,
+          "stop" : 1651806920348,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      } ],
+      "uid" : "47a7baba5d5fdc367359f1d3291f2de5"
+    }, {
+      "name" : "17328-MainThread",
+      "children" : [ {
+        "name" : "test_login[caseinfo0]",
+        "uid" : "24e917c8245409dd",
+        "parentUid" : "013a6f5106c9eba3798e32ba0401d001",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823262748,
+          "stop" : 1651823262893,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'none', 'userName': '15400010001'}}}" ]
+      }, {
+        "name" : "test_almightycode[caseinfo0]",
+        "uid" : "c247703a53b955a3",
+        "parentUid" : "013a6f5106c9eba3798e32ba0401d001",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823262566,
+          "stop" : 1651823262746,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none'}}" ]
+      } ],
+      "uid" : "013a6f5106c9eba3798e32ba0401d001"
+    } ],
+    "uid" : "a134c4636f82a6180f7a698ebc9ed6d5"
+  } ],
+  "name" : "timeline"
+}

@@ -1,0 +1,4 @@
+INFO     log:base_requests.py:77 接口请求地址 ==>> get
+INFO     log:base_requests.py:78 接口请求方式 ==>> none
+INFO     log:base_requests.py:80 接口请求头 ==>> null
+INFO     log:base_requests.py:81 接口请求 params 参数 ==>> null

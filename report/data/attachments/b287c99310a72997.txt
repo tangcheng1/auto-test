@@ -1,0 +1,13 @@
+INFO     log:base_requests.py:74 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+INFO     log:base_requests.py:75 接口请求方式 ==>> post
+INFO     log:base_requests.py:76 接口请求体 data 参数 ==>> {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36",
+    "deviceId": "1254",
+    "Content-Type": "application/json"
+}
+INFO     log:base_requests.py:78 接口请求头 ==>> {
+    "smsCode": "796033",
+    "userName": "15400010001"
+}
+INFO     log:base_requests.py:82 接口上传附件 files 参数 ==>> None
+INFO     log:base_requests.py:83 接口 cookies 参数 ==>> null
