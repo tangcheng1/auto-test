@@ -1,2 +1,0 @@
-INFO     log:login_test.py:25 ---测试开始---
-INFO     log:login_test.py:31 ---测试结束---

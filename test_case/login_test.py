@@ -8,49 +8,34 @@ import json
 
 import allure
 import pytest
-import yaml
-from config.config import *
-import json
-from tools.base_requests import assignment_yamlparams, sendRequest
+from tools.base_requests import Utils
 from tools.logger import logger
 from tools.yaml_util import YamlUtil
 
 
-class Testwork():
-    @allure.story('验证码接口')
-    @allure.description("配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value")
-    @pytest.mark.parametrize("caseinfo", YamlUtil().yaml_read("data", "almightycode.yaml"))
-    def test_almightycode(self, caseinfo):
-        # 获取ymal
-        value = assignment_yamlparams(caseinfo['request'])
-        url = URL + value['path']
-        response = sendRequest(value['method'], url, value['params'], value['headers'])
-        almighty_code = YamlUtil().yaml_write({"almighty_code": response["data"]}, "data", "extract.yaml")
-        assert response["code"] == "2"
-        # return almighty_code
-
+class Testlogin:
     @allure.story('骑手登录接口')
+    @pytest.mark.dependency()
     @pytest.mark.parametrize("caseinfo", YamlUtil().yaml_read("data", "login.yaml"))
     def test_login(self, caseinfo):
         # 获取ymal
-        value = assignment_yamlparams(caseinfo['request'])
+        value = caseinfo['request']
         # 更新需要参数化的万能验证码，完成接口关联
-        value['params']['smsCode'] = YamlUtil().yaml_read("data", "extract.yaml")["almighty_code"]
-        body= value['params']
-        # value['params']['smsCode']= almighty_code
-        # path = caseinfo['request']['path']
-        # method = caseinfo['request']['method']
-        # data = caseinfo['request']['params']
-        # headers = caseinfo['request']['headers']
-        # 拼接域名和path
-        url = URL + value['path']
-        response = sendRequest(value['method'], url ,body, value['headers'])
-        assert response["code"] == "1"
-        # print(response)
+        body = value['params']
+        # for key, value in body.items():
+        #     if key == value:
+        #        value= YamlUtil().yaml_read("data", "extract.yaml")["almighty_code"]
+
+        validate = value["validate"] if "validate" in value else None
+        response = Utils.sendRequest(caseinfo['name'],value['method'], value['path'], body, value['headers'])
+        if "token" == response.json():
+            token = YamlUtil().yaml_write({"token": response["data"]["token"]}, "data", "extract.yaml")
+        if validate:
+            Utils.validate(response, validate)
 
 
 if __name__ == '__main__':
-        # Testwork().yaml_read()
-        # Testwork().test_login()
+    # Testwork().yaml_read()
+    # Testwork().test_login()
 
-  pytest.main(['-vs', 'login_test.py'])
+    pytest.main(['-vs', 'login_test.py'])

@@ -8,3 +8,10 @@
       deviceId: '1254'
       Content-Type: application/json
     params: "none"
+
+    extract:
+        smsCode: $.data
+
+    validate:
+       - equal_to:
+          $.code: 1
