@@ -5,31 +5,49 @@
 # @File    : api_login.py
 # @Description :
 import json
+from string import Template
 
 import allure
 import pytest
 from tools.base_requests import Utils
 from tools.logger import logger
 from tools.yaml_util import YamlUtil
-
+import yaml
 
 class Testlogin:
+
+    # @allure.story('验证码接口')
+    # @allure.description("配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value")
+    # @pytest.mark.parametrize("caseinfo", YamlUtil().yaml_read("data_yaml", "almightycode.yaml"))
+    # def test_almightycode(self, caseinfo):
+    #     value = caseinfo['request']
+    #     response = Utils.sendRequest(caseinfo['name'], value['method'], value['path'], value['params'],
+    #                                  value['headers'])
+    #     almighty_code = YamlUtil().yaml_write({"smsCode": response["data"]}, "data_yaml", "extract.yaml")
+    #     # assert response["code"] == "1"
+    #     # print(response)
+    #     validate = value["validate"] if "validate" in value else None
+    #     if validate:
+    #         # logger.info(f"--预期验证的数据---\n{validate}")
+    #         Utils.validate(response, validate)
+
     @allure.story('骑手登录接口')
     @pytest.mark.dependency()
-    @pytest.mark.parametrize("caseinfo", YamlUtil().yaml_read("data", "login.yaml"))
+    @pytest.mark.parametrize("caseinfo", YamlUtil().yaml_read("data_yaml", "login.yaml"))
     def test_login(self, caseinfo):
         # 获取ymal
         value = caseinfo['request']
         # 更新需要参数化的万能验证码，完成接口关联
-        body = value['params']
-        # for key, value in body.items():
-        #     if key == value:
-        #        value= YamlUtil().yaml_read("data", "extract.yaml")["almighty_code"]
-
+        # 读取extract.yaml文件，替换掉login.yaml中需要参数化的变量，这里是将万能验证码的值传入到验证码smsCode中
+        extract = YamlUtil().yaml_read("data_yaml", "extract.yaml")
+        yaml_data = YamlUtil.extractdata_render_params(extract,value)
         validate = value["validate"] if "validate" in value else None
-        response = Utils.sendRequest(caseinfo['name'],value['method'], value['path'], body, value['headers'])
-        if "token" == response.json():
-            token = YamlUtil().yaml_write({"token": response["data"]["token"]}, "data", "extract.yaml")
+        response = Utils.sendRequest(caseinfo['name'],yaml_data['method'], yaml_data['path'], yaml_data['params'], yaml_data['headers'])
+        if "token" in str(response):
+            YamlUtil().yaml_write({"token":response["data"]["token"]}, "data_yaml", "extract.yaml")
+        else:
+            logger.info(f"token获取失败或者此为登录失败用例")
+
         if validate:
             Utils.validate(response, validate)
 

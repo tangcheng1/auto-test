@@ -1,0 +1,10 @@
+INFO     log:base_requests.py:54 ---------------接口测试开始---------------
+INFO     log:base_requests.py:100 接口名称:骑手登录
+INFO     log:base_requests.py:101 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+INFO     log:base_requests.py:102 请求方式:post
+INFO     log:base_requests.py:103 请求body:"{\"smsCode\": \"683137\", \"userName\": \"15400010001\"}"
+INFO     log:base_requests.py:105 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+INFO     log:base_requests.py:56  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIwODkxNTE0MDgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.QTnnxpOzw5fTQDda58yA0EtJDhOrV4MroseLewpOsVQ', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+INFO     log:base_requests.py:67  预期结果的值是1
+INFO     log:base_requests.py:69  获取真实值是1
+INFO     log:base_requests.py:74 ---------------接口测试结束---------------

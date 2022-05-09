@@ -25,6 +25,6 @@ def init_report():
 
 
 
-# pytest.main(["-s","--reruns=2", "android/testcase","--alluredir=data"])
+# pytest.main(["-s","--reruns=2", "android/testcase","--alluredir=data_yaml"])
 pytest.main(["-s", "test_case","--alluredir=result"])
 init_report()

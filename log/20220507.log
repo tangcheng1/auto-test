@@ -1,0 +1,710 @@
+[2022-05-07 09:28:01,432][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 09:28:01,432][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 09:28:01,432][base_requests.py 100][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 09:28:01,432][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 09:28:01,620][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '053056', 'success': True}
+[2022-05-07 09:28:01,620][almightycode_test.py 31][INFO]: --要提取的数据---
+{'smsCode': '$.data'}
+[2022-05-07 09:28:01,621][base_requests.py 79][INFO]: 提取的值是053056
+[2022-05-07 09:28:01,621][almightycode_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 09:28:01,621][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 09:28:01,621][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 09:28:01,624][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 09:28:01,624][base_requests.py 99][INFO]: 接口请求方式 ==>> post
+[2022-05-07 09:28:01,624][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "smsCode": "${smsCode}",
+    "userName": "15400010001"
+}
+[2022-05-07 09:28:01,624][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 09:28:01,767][base_requests.py 50][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 09:28:01,768][login_test.py 33][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 09:51:32,742][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 09:51:32,742][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 09:51:32,743][base_requests.py 100][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 09:51:32,743][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 09:51:32,907][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '007957', 'success': True}
+[2022-05-07 09:51:32,909][almightycode_test.py 29][INFO]: --要提取的数据---
+{'smsCode': '$.data'}
+[2022-05-07 09:51:32,910][base_requests.py 79][INFO]: 提取的值是007957
+[2022-05-07 09:51:32,910][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 09:51:32,910][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 09:51:32,910][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 09:51:32,915][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 09:51:32,916][base_requests.py 99][INFO]: 接口请求方式 ==>> post
+[2022-05-07 09:51:32,916][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "smsCode": "007957",
+    "userName": "15400010001"
+}
+[2022-05-07 09:51:32,916][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 09:51:33,138][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODgyOTMyNTQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.LwHSSlJV2SLNVTFCtWXUjaEIu1XQfmvXSf5rX4xMdKk', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 09:51:33,138][login_test.py 30][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 09:51:33,138][base_requests.py 79][INFO]: 提取的值是eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODgyOTMyNTQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.LwHSSlJV2SLNVTFCtWXUjaEIu1XQfmvXSf5rX4xMdKk
+[2022-05-07 09:51:33,138][login_test.py 33][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 09:51:33,138][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 09:51:33,138][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 10:01:10,018][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:01:10,019][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:01:10,019][base_requests.py 100][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:01:10,019][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:01:10,865][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '203828', 'success': True}
+[2022-05-07 10:01:10,866][almightycode_test.py 29][INFO]: --要提取的数据---
+{'smsCode': '$.data'}
+[2022-05-07 10:01:10,867][base_requests.py 79][INFO]: 提取的值是203828
+[2022-05-07 10:01:10,867][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:01:10,867][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:01:10,867][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 10:01:10,870][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:01:10,870][base_requests.py 99][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:01:10,870][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "smsCode": "203828",
+    "userName": "15400010001"
+}
+[2022-05-07 10:01:10,870][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:01:11,013][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg4NzEyNDYiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.htOU9bZwuiDVckvFCTSBRLf3dsgdbKTkGf6w9H-nDX8', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:01:11,014][login_test.py 31][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 10:01:11,014][base_requests.py 79][INFO]: 提取的值是eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg4NzEyNDYiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.htOU9bZwuiDVckvFCTSBRLf3dsgdbKTkGf6w9H-nDX8
+[2022-05-07 10:01:11,014][login_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:01:11,015][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:01:11,015][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 10:01:11,018][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:01:11,018][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:01:11,018][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "userName": "15400010001"
+}
+[2022-05-07 10:01:11,018][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg4NzEyNDYiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.htOU9bZwuiDVckvFCTSBRLf3dsgdbKTkGf6w9H-nDX8'}
+[2022-05-07 10:01:11,193][base_requests.py 50][INFO]: 返回的body ==>> {'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-07 10:01:11,193][ridercheckusername_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:01:11,194][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:01:11,194][base_requests.py 68][INFO]: 获取真实值是10011
+[2022-05-07 10:02:51,366][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:02:51,366][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:02:51,366][base_requests.py 100][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:02:51,366][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:02:51,506][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '610396', 'success': True}
+[2022-05-07 10:02:51,507][almightycode_test.py 29][INFO]: --要提取的数据---
+{'smsCode': '$.data'}
+[2022-05-07 10:02:51,508][base_requests.py 79][INFO]: 提取的值是610396
+[2022-05-07 10:02:51,508][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:02:51,508][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:02:51,508][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 10:02:51,511][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:02:51,511][base_requests.py 99][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:02:51,511][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "smsCode": "610396",
+    "userName": "15400010001"
+}
+[2022-05-07 10:02:51,511][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:02:51,661][base_requests.py 50][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg5NzE5MDEiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.IWsljLi7RursebkHhc6OPdjgINmDdh7UbocJHBrVSQ4', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:02:51,662][login_test.py 31][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 10:02:51,663][base_requests.py 79][INFO]: 提取的值是eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg5NzE5MDEiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.IWsljLi7RursebkHhc6OPdjgINmDdh7UbocJHBrVSQ4
+[2022-05-07 10:02:51,663][login_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:02:51,663][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:02:51,663][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-07 10:02:51,666][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:02:51,666][base_requests.py 99][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:02:51,666][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "smsCode": "610396",
+    "userName": "15400010001"
+}
+[2022-05-07 10:02:51,666][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:02:51,801][base_requests.py 50][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:02:51,854][base_requests.py 98][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:02:51,854][base_requests.py 99][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:02:51,854][base_requests.py 100][INFO]: 接口请求体body ==>> {
+    "userName": "15400010001"
+}
+[2022-05-07 10:02:51,854][base_requests.py 102][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODg5NzE5MDEiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.IWsljLi7RursebkHhc6OPdjgINmDdh7UbocJHBrVSQ4'}
+[2022-05-07 10:02:51,984][base_requests.py 50][INFO]: 返回的body ==>> {'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-07 10:02:51,985][ridercheckusername_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:02:51,985][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-07 10:02:51,985][base_requests.py 68][INFO]: 获取真实值是10011
+[2022-05-07 10:10:29,982][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:10:29,982][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:10:29,982][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:10:29,983][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:10:30,130][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '687014', 'success': True}
+[2022-05-07 10:10:30,131][almightycode_test.py 29][INFO]: --要提取的数据---
+{'smsCode': '$.data'}
+[2022-05-07 10:10:30,186][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:10:30,186][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:10:30,186][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "687014",
+    "userName": "15400010001"
+}
+[2022-05-07 10:10:30,187][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:10:30,325][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk0MzAzODMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.G4bL2arwTcdwWlVxdKE7MsuE9xIxMWbLb2WCcerXI3k', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:10:30,326][login_test.py 31][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 10:10:30,331][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:10:30,331][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:10:30,331][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "687014",
+    "userName": "15400010001"
+}
+[2022-05-07 10:10:30,331][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:10:30,460][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:10:30,466][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:10:30,466][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:10:30,466][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "userName": "13720235230"
+}
+[2022-05-07 10:10:30,466][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk0MzAzODMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.G4bL2arwTcdwWlVxdKE7MsuE9xIxMWbLb2WCcerXI3k'}
+[2022-05-07 10:10:30,600][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessUid': None}, 'success': True}
+[2022-05-07 10:10:30,600][ridercheckusername_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:10:30,600][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:10:30,601][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:11:38,061][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:11:38,061][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:11:38,061][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:11:38,061][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:11:38,190][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '343462', 'success': True}
+[2022-05-07 10:11:38,192][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:11:38,192][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:11:38,193][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:11:38,195][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:11:38,195][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:11:38,196][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "343462",
+    "userName": "15400010001"
+}
+[2022-05-07 10:11:38,196][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:11:38,331][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk0OTgzOTAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.ZlZGgNEiKz7pSrGfDI2_uF5sBE1Ls2FxiBxfetIlSCo', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:11:38,332][login_test.py 31][INFO]: --要提取的数据---
+{'token': '$.data.token'}
+[2022-05-07 10:11:38,386][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:11:38,386][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:11:38,386][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "343462",
+    "userName": "15400010001"
+}
+[2022-05-07 10:11:38,386][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:11:38,515][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:11:38,521][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:11:38,521][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:11:38,521][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "userName": "13720235230"
+}
+[2022-05-07 10:11:38,521][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk0OTgzOTAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.ZlZGgNEiKz7pSrGfDI2_uF5sBE1Ls2FxiBxfetIlSCo'}
+[2022-05-07 10:11:38,653][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessUid': None}, 'success': True}
+[2022-05-07 10:11:38,653][ridercheckusername_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:11:38,653][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:11:38,653][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:12:19,554][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:12:19,554][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:12:19,554][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:12:19,554][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:12:19,711][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '814904', 'success': True}
+[2022-05-07 10:12:19,712][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:12:19,712][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:12:19,713][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:12:19,715][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:12:19,716][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:12:19,716][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "814904",
+    "userName": "15400010001"
+}
+[2022-05-07 10:12:19,716][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:12:19,847][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk1Mzk5MDUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.BhuNu0lOiIosbLGK1Sb0HGFLRSzwMGv28eeNd-vLOYI', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:12:19,848][login_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:12:19,848][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:12:19,849][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:12:19,852][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:12:19,852][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:12:19,852][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "814904",
+    "userName": "15400010001"
+}
+[2022-05-07 10:12:19,852][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:12:19,986][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:12:20,050][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:12:20,050][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:12:20,050][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "userName": "13720235230"
+}
+[2022-05-07 10:12:20,050][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk1Mzk5MDUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.BhuNu0lOiIosbLGK1Sb0HGFLRSzwMGv28eeNd-vLOYI'}
+[2022-05-07 10:12:20,179][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessUid': None}, 'success': True}
+[2022-05-07 10:12:20,179][ridercheckusername_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:12:20,179][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:12:20,179][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:13:18,527][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:13:18,527][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:13:18,528][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:13:18,528][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:13:18,666][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '948443', 'success': True}
+[2022-05-07 10:13:18,667][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:13:18,667][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:13:18,667][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:13:18,670][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:13:18,670][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:13:18,670][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "948443",
+    "userName": "15400010001"
+}
+[2022-05-07 10:13:18,670][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:13:18,805][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk1OTg4NjEiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.hEh0it7M3B-xAAuKT0Vyc0njz2ozlCTFEbu4xxCqcbg', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:13:18,805][login_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:13:18,805][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:13:18,806][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:13:18,808][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:13:18,808][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:13:18,808][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "948443",
+    "userName": "15400010001"
+}
+[2022-05-07 10:13:18,808][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:13:18,936][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:13:18,994][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:13:18,994][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:13:18,994][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "userName": "13720235230"
+}
+[2022-05-07 10:13:18,994][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4ODk1OTg4NjEiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.hEh0it7M3B-xAAuKT0Vyc0njz2ozlCTFEbu4xxCqcbg'}
+[2022-05-07 10:13:19,130][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessUid': None}, 'success': True}
+[2022-05-07 10:13:19,130][ridercheckusername_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:13:19,130][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:13:19,130][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:21:32,112][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:21:32,113][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:21:32,113][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:21:32,113][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:21:32,279][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '602010', 'success': True}
+[2022-05-07 10:21:32,280][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:21:32,280][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:21:32,281][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:21:32,283][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:21:32,284][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:21:32,284][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "602010",
+    "userName": "15400010001"
+}
+[2022-05-07 10:21:32,284][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:21:32,422][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4OTAwOTI0MTUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.d9NwlMj8aNK7gkvSBPCrOkQCP-w0crqp5-USjsKCskM', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:21:32,423][login_test.py 34][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:21:32,423][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:21:32,423][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:21:32,426][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:21:32,426][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:21:32,426][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "602010",
+    "userName": "15400010001"
+}
+[2022-05-07 10:21:32,427][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:21:32,561][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:21:32,621][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/check/username
+[2022-05-07 10:21:32,621][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:21:32,621][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "userName": "13720235230"
+}
+[2022-05-07 10:21:32,621][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4OTAwOTI0MTUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.d9NwlMj8aNK7gkvSBPCrOkQCP-w0crqp5-USjsKCskM'}
+[2022-05-07 10:21:32,757][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessUid': None}, 'success': True}
+[2022-05-07 10:21:32,757][ridercheckusername_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:21:32,757][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:21:32,757][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:25:15,332][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:25:15,332][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:25:15,332][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:25:15,332][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:25:15,507][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '180088', 'success': True}
+[2022-05-07 10:25:15,508][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:25:15,508][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:25:15,508][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:25:15,514][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:25:15,514][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:25:15,514][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "180088",
+    "userName": "15400010001"
+}
+[2022-05-07 10:25:15,514][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:25:15,655][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4OTAzMTU2NDUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.e2VBqaRVYmHNvPkqfdTXXvNHr3f6zKfac2JD7MqFdvU', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:25:15,655][login_test.py 38][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:25:15,655][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:25:15,655][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:25:15,658][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:25:15,658][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:25:15,658][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "180088",
+    "userName": "15400010001"
+}
+[2022-05-07 10:25:15,658][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:25:15,788][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:25:15,788][login_test.py 38][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 10003}}]
+[2022-05-07 10:25:15,789][base_requests.py 68][INFO]: 预期结果的值是10003
+[2022-05-07 10:25:15,789][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 10:26:46,470][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 10:26:46,470][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 10:26:46,470][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 10:26:46,470][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:26:46,638][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '565515', 'success': True}
+[2022-05-07 10:26:46,638][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:26:46,638][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:26:46,639][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:26:46,641][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:26:46,642][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:26:46,642][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "565515",
+    "userName": "15400010001"
+}
+[2022-05-07 10:26:46,642][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:26:46,783][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE4OTA0MDY3NzYiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.ZiORMLxPqzX9cqGQ3CCwwsQZxqHt6LjrdPGXFLjG3b4', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 10:26:46,784][login_test.py 38][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 10003}}]
+[2022-05-07 10:26:46,784][base_requests.py 68][INFO]: 预期结果的值是10003
+[2022-05-07 10:26:46,784][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 10:26:46,787][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 10:26:46,787][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 10:26:46,787][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "565515",
+    "userName": "15400010001"
+}
+[2022-05-07 10:26:46,787][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 10:26:46,918][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 10:26:46,919][login_test.py 38][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 10:26:46,919][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 10:26:46,919][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 16:39:27,901][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 16:39:27,901][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 16:39:27,901][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 16:39:27,901][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 16:39:30,490][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '489777', 'success': True}
+[2022-05-07 16:39:30,491][almightycode_test.py 32][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 16:39:30,491][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 16:39:30,492][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 16:39:30,496][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 16:39:30,496][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 16:39:30,496][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "489777",
+    "userName": "15400010001"
+}
+[2022-05-07 16:39:30,496][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 16:39:30,640][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTE5MTI3NzA2MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.ZJLVKaJjR5Cicpwvg28_xbKyldv4QsvxK9fRJFKEpiE', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-07 16:39:30,640][login_test.py 39][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 10003}}]
+[2022-05-07 16:39:30,640][base_requests.py 68][INFO]: 预期结果的值是10003
+[2022-05-07 16:39:30,641][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 16:39:30,643][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 16:39:30,643][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 16:39:30,643][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "489777",
+    "userName": "15400010001"
+}
+[2022-05-07 16:39:30,643][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 16:39:30,777][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 16:39:30,777][login_test.py 39][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 16:39:30,777][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 16:39:30,777][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 17:03:00,845][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:03:00,845][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:03:00,845][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:03:00,845][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:03:01,014][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '046772', 'success': True}
+[2022-05-07 17:03:01,016][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:03:01,016][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:03:01,017][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:03:01,019][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 17:03:01,019][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 17:03:01,020][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "qwe",
+    "userName": "15400010001"
+}
+[2022-05-07 17:03:01,020][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:03:01,163][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 17:03:01,163][login_test.py 33][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 10003}}]
+[2022-05-07 17:03:01,163][base_requests.py 68][INFO]: 预期结果的值是10003
+[2022-05-07 17:03:01,163][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 17:03:01,166][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 17:03:01,166][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 17:03:01,166][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "smsCode",
+    "userName": "15400010001"
+}
+[2022-05-07 17:03:01,166][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:03:01,294][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 17:03:01,294][login_test.py 33][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:03:01,294][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:03:01,294][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 17:05:34,429][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:05:34,430][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:05:34,430][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:05:34,430][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:05:34,598][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '037499', 'success': True}
+[2022-05-07 17:05:34,598][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:05:34,599][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:05:34,599][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:05:34,601][login_test.py 29][INFO]: --预期验证的数据---  456
+[2022-05-07 17:05:34,601][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 17:05:34,601][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 17:05:34,602][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "qwe",
+    "userName": "15400010001"
+}
+[2022-05-07 17:05:34,602][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:05:34,735][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 17:05:34,735][login_test.py 36][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 10003}}]
+[2022-05-07 17:05:34,735][base_requests.py 68][INFO]: 预期结果的值是10003
+[2022-05-07 17:05:34,736][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 17:05:34,738][login_test.py 29][INFO]: --预期验证的数据---  456
+[2022-05-07 17:05:34,738][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 17:05:34,738][base_requests.py 101][INFO]: 接口请求方式 ==>> post
+[2022-05-07 17:05:34,738][base_requests.py 102][INFO]: 接口请求体body ==>> {
+    "smsCode": "smsCode",
+    "userName": "15400010001"
+}
+[2022-05-07 17:05:34,738][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:05:34,869][base_requests.py 52][INFO]: 返回的body ==>> {'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 17:05:34,870][login_test.py 36][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:05:34,870][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:05:34,870][base_requests.py 70][INFO]: 获取真实值是10003
+[2022-05-07 17:15:40,084][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:15:40,085][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:15:40,085][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:15:40,085][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:15:40,257][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '867045', 'success': True}
+[2022-05-07 17:15:40,258][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:15:40,258][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:15:40,258][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:17:58,006][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:17:58,006][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:17:58,006][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:17:58,006][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:17:58,163][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '645952', 'success': True}
+[2022-05-07 17:17:58,164][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:17:58,164][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:17:58,164][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:21:57,750][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:21:57,750][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:21:57,750][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:21:57,750][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:21:57,919][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '358881', 'success': True}
+[2022-05-07 17:21:57,920][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:21:57,920][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:21:57,921][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:23:35,018][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:23:35,018][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:23:35,018][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:23:35,018][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:23:35,183][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '074532', 'success': True}
+[2022-05-07 17:23:35,184][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:23:35,184][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:23:35,184][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:24:13,789][base_requests.py 100][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:24:13,789][base_requests.py 101][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:24:13,789][base_requests.py 102][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:24:13,789][base_requests.py 104][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:24:13,923][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '982624', 'success': True}
+[2022-05-07 17:24:13,923][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:24:13,924][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:24:13,924][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:48:02,827][base_requests.py 100][INFO]: ------------接口名称万能验证码------------
+[2022-05-07 17:48:02,828][base_requests.py 101][INFO]: 接口请求地址 ==>> http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:48:02,828][base_requests.py 102][INFO]: 接口请求方式 ==>> get
+[2022-05-07 17:48:02,828][base_requests.py 103][INFO]: 接口请求体body ==>> "none"
+[2022-05-07 17:48:02,828][base_requests.py 105][INFO]: 接口请求头 ==>> {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:48:02,989][base_requests.py 52][INFO]: 返回的body ==>> {'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '389360', 'success': True}
+[2022-05-07 17:48:02,989][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:48:02,989][base_requests.py 68][INFO]: 预期结果的值是1
+[2022-05-07 17:48:02,990][base_requests.py 70][INFO]: 获取真实值是1
+[2022-05-07 17:57:23,671][conftest.py 16][INFO]: ---------------接口测试开始-------------
+[2022-05-07 17:57:23,825][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 17:57:23,825][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:57:23,825][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 17:57:23,825][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 17:57:23,825][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:57:23,825][base_requests.py 53][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '672543', 'success': True}
+[2022-05-07 17:57:23,826][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:57:23,827][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 17:57:23,827][base_requests.py 71][INFO]: 获取真实值是1
+[2022-05-07 17:59:23,658][conftest.py 16][INFO]: ---------------接口测试开始-------------
+[2022-05-07 17:59:23,809][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 17:59:23,809][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 17:59:23,809][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 17:59:23,809][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 17:59:23,810][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 17:59:23,810][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '970935', 'success': True}
+[2022-05-07 17:59:23,810][almightycode_test.py 29][INFO]: --预期验证的数据---
+[{'equal_to': {'$.code': 1}}]
+[2022-05-07 17:59:23,810][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:20:10,029][conftest.py 16][INFO]: ---------------接口测试开始-------------
+[2022-05-07 18:20:10,181][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:20:10,181][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:20:10,181][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:20:10,181][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:20:10,181][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:20:10,182][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '916457', 'success': True}
+[2022-05-07 18:20:10,183][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:20:10,325][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:20:10,325][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:20:10,325][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:20:10,325][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:20:10,325][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:20:10,325][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:20:10,326][base_requests.py 69][INFO]: 预期结果的值是10003
+[2022-05-07 18:20:10,456][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:20:10,456][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:20:10,457][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:20:10,457][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:20:10,457][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:20:10,457][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:20:10,457][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:24:50,878][conftest.py 16][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:24:50,879][conftest.py 17][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:24:52,228][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:24:52,229][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:24:52,229][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:24:52,229][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:24:52,229][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:24:52,229][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '803518', 'success': True}
+[2022-05-07 18:24:52,230][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:24:52,374][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:24:52,375][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:24:52,375][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:24:52,375][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:24:52,375][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:24:52,375][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:24:52,375][base_requests.py 69][INFO]: 预期结果的值是10003
+[2022-05-07 18:24:52,510][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:24:52,511][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:24:52,511][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:24:52,511][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:24:52,511][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:24:52,511][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:24:52,511][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:25:17,189][conftest.py 16][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:25:17,327][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:25:17,328][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:25:17,328][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:25:17,328][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:25:17,328][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:25:17,328][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '161750', 'success': True}
+[2022-05-07 18:25:17,329][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:25:17,462][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:25:17,463][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:25:17,463][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:25:17,463][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:25:17,463][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:25:17,463][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:25:17,463][base_requests.py 69][INFO]: 预期结果的值是10003
+[2022-05-07 18:25:17,597][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:25:17,597][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:25:17,598][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:25:17,598][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:25:17,598][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:25:17,598][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:25:17,598][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:25:17,663][conftest.py 18][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:26:01,393][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:26:01,393][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:26:01,393][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:26:01,393][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:26:01,393][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:26:01,394][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '928922', 'success': True}
+[2022-05-07 18:26:01,394][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:26:01,533][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:26:01,533][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:26:01,534][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:26:01,534][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:26:01,534][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:26:01,534][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:26:01,534][base_requests.py 69][INFO]: 预期结果的值是10003
+[2022-05-07 18:26:01,667][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:26:01,667][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:26:01,667][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:26:01,667][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:26:01,667][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:26:01,667][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:26:01,667][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:29:12,609][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:29:12,762][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:29:12,763][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:29:12,763][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:29:12,763][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:29:12,763][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:29:12,763][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '712705', 'success': True}
+[2022-05-07 18:29:12,763][base_requests.py 60][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:29:12,763][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:29:12,766][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:29:12,901][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:29:12,901][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:29:12,901][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:29:12,902][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:29:12,902][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:29:12,902][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:29:12,902][base_requests.py 60][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:29:12,902][base_requests.py 69][INFO]: 预期结果的值是10003
+[2022-05-07 18:29:12,905][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:29:13,035][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:29:13,035][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:29:13,035][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:29:13,035][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:29:13,035][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:29:13,035][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:29:13,035][base_requests.py 60][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:29:13,035][base_requests.py 69][INFO]: 预期结果的值是1
+[2022-05-07 18:30:06,200][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:30:06,330][base_requests.py 101][INFO]: 接口名称:万能验证码
+[2022-05-07 18:30:06,330][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-07 18:30:06,330][base_requests.py 103][INFO]: 请求方式:get
+[2022-05-07 18:30:06,330][base_requests.py 104][INFO]: 请求body:"none"
+[2022-05-07 18:30:06,330][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:30:06,331][base_requests.py 53][INFO]:  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '519527', 'success': True}
+[2022-05-07 18:30:06,331][base_requests.py 60][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:30:06,385][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:30:06,513][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:30:06,513][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:30:06,513][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:30:06,513][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:30:06,513][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:30:06,513][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:30:06,513][base_requests.py 60][INFO]: ---------------接口测试结束---------------
+[2022-05-07 18:30:06,517][base_requests.py 35][INFO]: ---------------接口测试开始---------------
+[2022-05-07 18:30:06,640][base_requests.py 101][INFO]: 接口名称:骑手登录
+[2022-05-07 18:30:06,641][base_requests.py 102][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-07 18:30:06,641][base_requests.py 103][INFO]: 请求方式:post
+[2022-05-07 18:30:06,641][base_requests.py 104][INFO]: 请求body:"{\"smsCode\": \"smsCode\", \"userName\": \"15400010001\"}"
+[2022-05-07 18:30:06,641][base_requests.py 106][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-07 18:30:06,641][base_requests.py 53][INFO]:  实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-07 18:30:06,641][base_requests.py 60][INFO]: ---------------接口测试结束---------------

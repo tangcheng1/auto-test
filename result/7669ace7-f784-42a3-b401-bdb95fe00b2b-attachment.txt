@@ -1,0 +1,9 @@
+INFO     log:conftest.py:16 ---------------接口测试开始---------------
+INFO     log:conftest.py:17 ---------------接口测试结束---------------
+INFO     log:base_requests.py:101 接口名称:万能验证码
+INFO     log:base_requests.py:102 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+INFO     log:base_requests.py:103 请求方式:get
+INFO     log:base_requests.py:104 请求body:"none"
+INFO     log:base_requests.py:106 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+INFO     log:base_requests.py:53  实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '803518', 'success': True}
+INFO     log:base_requests.py:69 预期结果的值是1

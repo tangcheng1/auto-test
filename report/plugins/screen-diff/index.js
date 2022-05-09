@@ -17,7 +17,7 @@
                 return attachment.name === name;
             })[0];
             if (matchedImage) {
-                return 'data/attachments/' + matchedImage.source;
+                return 'data_yaml/attachments/' + matchedImage.source;
             }
         }
         return null;
@@ -46,7 +46,7 @@
         if (actualImage) {
             return renderImage(actualImage);
         }
-        return 'No diff data provided';
+        return 'No diff data_yaml provided';
     }
 
     var TestResultView = Backbone.Marionette.View.extend({

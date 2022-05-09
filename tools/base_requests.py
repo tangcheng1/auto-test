@@ -1,4 +1,6 @@
 import json,os
+from string import Template
+
 from tools.logger import logger
 import xlrd
 from requests import request
@@ -10,7 +12,7 @@ class Utils:
     # 读取excel
     @staticmethod
     def excel_read():
-        book = xlrd.open_workbook("../data/case_data1.xls")
+        book = xlrd.open_workbook("../data_yaml/case_data1.xls")
         # 读取第一个sheet页
         sheet = book.sheet_by_index(0)
         list = []
@@ -31,8 +33,8 @@ class Utils:
 
     @staticmethod
     # 重写post 和get请求，方便自动去请求
-    def sendRequest(name,method, url, data,headers,**kwargs):
-        logger.info("---------------接口测试开始---------------")
+    def sendRequest(name,method,url,data,headers,**kwargs):
+
         # 把请求方法改成小写
         method = str(method).lower()
         rep = None
@@ -47,26 +49,29 @@ class Utils:
         elif method == "post":
             # 把键值对转换成str类型
             data = json.dumps(data)
-            rep = request(method=method, url=url, data=data, headers=headers,**kwargs).json()
+            rep = request(method=method, url=url, data=data, headers=headers,**kwargs)
         # 打印请求前日志
+        logger.info("---------------接口测试开始---------------")
         Utils.request_log(name, method, url, data, headers)
         logger.info(" 实际结果:{}".format(rep.json()))
-        logger.info("---------------接口测试结束---------------")
 
+        return rep.json()
 
-
+    # 断言方法
     @staticmethod
     def validate(response, validate: list):
         for val in validate:
             for key, item in val.items():
                 for key_json_path, item_expect in item.items():
-                    logger.info(f"预期结果的值是{item_expect}")
+                    item_expect =str(item_expect)
+                    logger.info(f" 预期结果的值是{item_expect}")
                     actual_val = jsonpath.jsonpath(response, key_json_path)[0]
-                    # logger.info(f"获取真实值是{actual_val}")
+                    logger.info(f" 获取真实值是{actual_val}")
                     if key == "equal_to":
-                        assert(actual_val, item_expect)
+                        assert actual_val == item_expect
                     else:
                         logger.info("-------暂时不支持该断言方法---------")
+        logger.info("---------------接口测试结束---------------")
 
 
     # @staticmethod
@@ -104,9 +109,9 @@ class Utils:
         # logger.info("接口上传附件 files 参数 ==>> {}".format(files))
         # logger.info("接口 cookies 参数 ==>> {}".format(complexjson.dumps(cookies, indent=4, ensure_ascii=False)))
 
-        # (method=method, url=url, data=data, headers=headers, ** kwargs)
+        # (method=method, url=url, data_yaml=data_yaml, headers=headers, ** kwargs)
     if __name__ == '__main__':
-        work = YamlUtil().yaml_read("data", "login.yaml")
-        # work =f"{str(Path(__file__).parent.parent)}/data/login.yaml"
+        work = YamlUtil().yaml_read("data_yaml", "login.yaml")
+        # work =f"{str(Path(__file__).parent.parent)}/data_yaml/login.yaml"
         print(work)
 

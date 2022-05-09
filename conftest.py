@@ -15,7 +15,7 @@ from tools.logger import logger
 # 为了保证每个测试会话前extract.yaml列表数据是空的
 @pytest.fixture(scope="session", autouse=True)
 def clear_yaml():
-    YamlUtil().yaml_clear("data", "extract.yaml")
+    YamlUtil().yaml_clear("data_yaml", "extract.yaml")
 
 # def pytest_collect_file(parent, path):
 #     # 获取文件.yml 文件,匹配规则

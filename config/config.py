@@ -1,4 +1,4 @@
 
 URL = "http://api.errand.u57.net"
-test_case_path = "data/case_data.xls"
+test_case_path = "data_yaml/case_data.xls"
 report= "report/"
