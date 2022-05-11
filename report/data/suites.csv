@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat May 07 10:21:32 CST 2022","Sat May 07 10:21:32 CST 2022","140","test_case","login_test","Testlogin","","","test_login[caseinfo0]",""
-"broken","Sat May 07 10:21:32 CST 2022","Sat May 07 10:21:32 CST 2022","136","test_case","login_test","Testlogin","","","test_login[caseinfo1]",""
-"passed","Sat May 07 10:21:32 CST 2022","Sat May 07 10:21:32 CST 2022","137","test_case","ridercheckusername_test","Testridercheckusername","","","test_login[caseinfo0]",""
-"passed","Sat May 07 10:21:32 CST 2022","Sat May 07 10:21:32 CST 2022","169","test_case","almightycode_test","Testwork","","","test_almightycode[caseinfo0]","配置文件的组成：1、section：表示要标记的不同数据的区域 2、option：相当于字典当中的key 3、value：相当于字典当中的value"

@@ -1,0 +1,10 @@
+INFO     test:yaml_util.py:54 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+INFO     test:base_requests.py:34 ---------------接口测试开始---------------
+INFO     test:base_requests.py:57 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+INFO     test:base_requests.py:58 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+INFO     test:base_requests.py:59 请求方式:post
+INFO     test:base_requests.py:60 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+INFO     test:base_requests.py:62 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+INFO     test:base_requests.py:36 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+INFO     test:base_requests.py:46 预期结果的值是1
+INFO     test:base_requests.py:48 获取真实值是30003

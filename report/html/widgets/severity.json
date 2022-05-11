@@ -1,0 +1,91 @@
+[ {
+  "uid" : "f672d10a504735b9",
+  "name" : "test_login[caseinfo1]",
+  "time" : {
+    "start" : 1652234692291,
+    "stop" : 1652234692426,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66f1aa7933653f31",
+  "name" : "test_Testridercheckusername[caseinfo1]",
+  "time" : {
+    "start" : 1652234692566,
+    "stop" : 1652234692699,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c24fd97ac0bd6b18",
+  "name" : "test_ridercheckuseramount[caseinfo1]",
+  "time" : {
+    "start" : 1652234693066,
+    "stop" : 1652234693204,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75591ffbb1d80016",
+  "name" : "test_Testridercheckusername[caseinfo0]",
+  "time" : {
+    "start" : 1652234692428,
+    "stop" : 1652234692564,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90590c9c20514f41",
+  "name" : "test_login[caseinfo0]",
+  "time" : {
+    "start" : 1652234692149,
+    "stop" : 1652234692290,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1efd695b08d1d3b",
+  "name" : "test_almightycode[caseinfo0]",
+  "time" : {
+    "start" : 1652234691976,
+    "stop" : 1652234692146,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "385949ecfb5f30de",
+  "name" : "test_ridercostuseramount[caseinfo0]",
+  "time" : {
+    "start" : 1652234693206,
+    "stop" : 1652234693206,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d2e7f0be8a1a2348",
+  "name" : "test_ridercheckuseramount[caseinfo0]",
+  "time" : {
+    "start" : 1652234692844,
+    "stop" : 1652234692978,
+    "duration" : 134
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "405b9680775b2a47",
+  "name" : "test_Testridercheckusername[caseinfo2]",
+  "time" : {
+    "start" : 1652234692701,
+    "stop" : 1652234692841,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

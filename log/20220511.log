@@ -1,0 +1,1362 @@
+[2022-05-11 09:42:25,562][run.py 18][INFO]: 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11 09:43:30,822][run.py 18][INFO]: 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11 09:43:32,533][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:32,534][base_requests.py 77][INFO]: 接口名称:万能验证码
+[2022-05-11 09:43:32,534][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11 09:43:32,534][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 09:43:32,534][base_requests.py 80][INFO]: 请求body:"none"
+[2022-05-11 09:43:32,534][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 09:43:32,534][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '963632', 'success': True}
+[2022-05-11 09:43:32,535][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 09:43:32,536][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 09:43:32,536][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:32,542][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '963632', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11 09:43:32,685][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:32,685][base_requests.py 77][INFO]: 接口名称:骑手登录
+[2022-05-11 09:43:32,685][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 09:43:32,685][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 09:43:32,685][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"963632\", \"userName\": \"15400010001\"}"
+[2022-05-11 09:43:32,686][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 09:43:32,686][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11 09:43:32,687][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 09:43:32,687][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 09:43:32,687][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:32,691][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11 09:43:32,819][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:32,819][base_requests.py 77][INFO]: 接口名称:骑手登录--验证码错误
+[2022-05-11 09:43:32,819][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 09:43:32,819][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 09:43:32,820][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11 09:43:32,820][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 09:43:32,820][base_requests.py 56][INFO]: 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11 09:43:32,820][login_test.py 47][INFO]: token获取失败或者此为登录失败用例
+[2022-05-11 09:43:32,820][base_requests.py 66][INFO]: 预期结果的值是10003
+[2022-05-11 09:43:32,820][base_requests.py 68][INFO]: 获取真实值是10003
+[2022-05-11 09:43:32,820][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:32,828][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 09:43:32,953][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:32,953][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11 09:43:32,953][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 09:43:32,953][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 09:43:32,954][base_requests.py 80][INFO]: 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11 09:43:32,954][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}
+[2022-05-11 09:43:32,954][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11 09:43:32,954][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 09:43:32,954][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 09:43:32,955][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:32,959][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 09:43:33,085][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:33,085][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11 09:43:33,085][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 09:43:33,085][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 09:43:33,086][base_requests.py 80][INFO]: 请求body:{
+    "userName": ""
+}
+[2022-05-11 09:43:33,086][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}
+[2022-05-11 09:43:33,086][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 09:43:33,086][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 09:43:33,086][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 09:43:33,086][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:33,092][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11 09:43:33,220][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:33,221][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11 09:43:33,221][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 09:43:33,221][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 09:43:33,221][base_requests.py 80][INFO]: 请求body:{
+    "userName": "187555"
+}
+[2022-05-11 09:43:33,221][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}
+[2022-05-11 09:43:33,221][base_requests.py 56][INFO]: 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11 09:43:33,222][base_requests.py 66][INFO]: 预期结果的值是10011
+[2022-05-11 09:43:33,222][base_requests.py 68][INFO]: 获取真实值是10011
+[2022-05-11 09:43:33,222][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 09:43:33,226][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 09:43:33,364][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:33,365][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11 09:43:33,365][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 09:43:33,365][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 09:43:33,365][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11 09:43:33,365][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}
+[2022-05-11 09:43:33,365][base_requests.py 56][INFO]: 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11 09:43:33,365][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 09:43:33,365][base_requests.py 68][INFO]: 获取真实值是30003
+[2022-05-11 09:43:33,444][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 09:43:33,572][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 09:43:33,572][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11 09:43:33,573][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 09:43:33,573][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 09:43:33,573][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11 09:43:33,573][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzM0MTQ3NzUiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.sOvR8x4oLfLINjvFuw3M_mDxje19HvXpQtbO2gjFi_8'}
+[2022-05-11 09:43:33,573][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 09:43:33,573][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 09:43:33,573][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 09:43:33,574][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:01:59,043][run.py 18][INFO]: 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11 10:01:59,591][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:01:59,592][base_requests.py 77][INFO]: 接口名称:万能验证码
+[2022-05-11 10:01:59,592][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11 10:01:59,592][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:01:59,592][base_requests.py 80][INFO]: 请求body:"none"
+[2022-05-11 10:01:59,592][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:01:59,592][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '679551', 'success': True}
+[2022-05-11 10:01:59,593][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:01:59,594][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:01:59,595][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:01:59,678][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '679551', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11 10:01:59,815][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:01:59,815][base_requests.py 77][INFO]: 接口名称:骑手登录
+[2022-05-11 10:01:59,815][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 10:01:59,816][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:01:59,816][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"679551\", \"userName\": \"15400010001\"}"
+[2022-05-11 10:01:59,816][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:01:59,816][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11 10:01:59,817][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:01:59,817][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:01:59,817][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:01:59,822][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11 10:01:59,953][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:01:59,953][base_requests.py 77][INFO]: 接口名称:骑手登录--验证码错误
+[2022-05-11 10:01:59,954][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 10:01:59,954][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:01:59,954][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11 10:01:59,954][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:01:59,954][base_requests.py 56][INFO]: 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11 10:01:59,954][login_test.py 51][INFO]: token获取失败或者此为登录失败用例
+[2022-05-11 10:01:59,955][base_requests.py 66][INFO]: 预期结果的值是10003
+[2022-05-11 10:01:59,955][base_requests.py 68][INFO]: 获取真实值是10003
+[2022-05-11 10:01:59,955][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:01:59,959][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 10:02:00,091][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:02:00,092][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11 10:02:00,092][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:02:00,093][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:02:00,093][base_requests.py 80][INFO]: 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11 10:02:00,093][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}
+[2022-05-11 10:02:00,093][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11 10:02:00,094][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:02:00,094][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:02:00,094][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:02:00,099][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 10:02:00,223][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:02:00,223][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11 10:02:00,223][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:02:00,223][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:02:00,224][base_requests.py 80][INFO]: 请求body:{
+    "userName": ""
+}
+[2022-05-11 10:02:00,224][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}
+[2022-05-11 10:02:00,224][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 10:02:00,224][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 10:02:00,224][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 10:02:00,224][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:02:00,229][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11 10:02:00,359][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:02:00,359][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11 10:02:00,360][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:02:00,360][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:02:00,360][base_requests.py 80][INFO]: 请求body:{
+    "userName": "187555"
+}
+[2022-05-11 10:02:00,360][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}
+[2022-05-11 10:02:00,360][base_requests.py 56][INFO]: 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11 10:02:00,360][base_requests.py 66][INFO]: 预期结果的值是10011
+[2022-05-11 10:02:00,360][base_requests.py 68][INFO]: 获取真实值是10011
+[2022-05-11 10:02:00,361][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:02:00,366][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 10:02:00,499][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:02:00,499][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11 10:02:00,499][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 10:02:00,499][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:02:00,500][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11 10:02:00,500][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}
+[2022-05-11 10:02:00,500][base_requests.py 56][INFO]: 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11 10:02:00,500][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:02:00,500][base_requests.py 68][INFO]: 获取真实值是30003
+[2022-05-11 10:02:00,511][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 10:02:00,638][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:02:00,638][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11 10:02:00,638][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 10:02:00,639][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:02:00,639][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11 10:02:00,639][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ1MjE4OTgiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.JOob7t078yxeXUVS1gQ7LvsNXXEP_rrbkFeI6Hv5ozc'}
+[2022-05-11 10:02:00,639][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 10:02:00,639][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 10:02:00,639][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 10:02:00,639][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:51,622][run.py 18][INFO]: 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11 10:04:52,143][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,143][base_requests.py 77][INFO]: 接口名称:万能验证码
+[2022-05-11 10:04:52,143][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11 10:04:52,143][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:04:52,144][base_requests.py 80][INFO]: 请求body:"none"
+[2022-05-11 10:04:52,144][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:04:52,144][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '660875', 'success': True}
+[2022-05-11 10:04:52,145][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:04:52,146][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:04:52,146][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,150][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '660875', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11 10:04:52,288][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,288][base_requests.py 77][INFO]: 接口名称:骑手登录
+[2022-05-11 10:04:52,288][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 10:04:52,288][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:04:52,288][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"660875\", \"userName\": \"15400010001\"}"
+[2022-05-11 10:04:52,288][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:04:52,288][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11 10:04:52,289][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:04:52,289][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:04:52,289][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,293][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11 10:04:52,424][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,424][base_requests.py 77][INFO]: 接口名称:骑手登录--验证码错误
+[2022-05-11 10:04:52,424][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11 10:04:52,424][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:04:52,424][base_requests.py 80][INFO]: 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11 10:04:52,425][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11 10:04:52,425][base_requests.py 56][INFO]: 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11 10:04:52,425][login_test.py 51][INFO]: token获取失败或者此为登录失败用例
+[2022-05-11 10:04:52,425][base_requests.py 66][INFO]: 预期结果的值是10003
+[2022-05-11 10:04:52,425][base_requests.py 68][INFO]: 获取真实值是10003
+[2022-05-11 10:04:52,425][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,430][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 10:04:52,561][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,562][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11 10:04:52,562][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:04:52,562][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:04:52,562][base_requests.py 80][INFO]: 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11 10:04:52,562][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}
+[2022-05-11 10:04:52,562][base_requests.py 56][INFO]: 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11 10:04:52,563][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:04:52,563][base_requests.py 68][INFO]: 获取真实值是1
+[2022-05-11 10:04:52,563][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,567][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 10:04:52,697][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,697][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11 10:04:52,697][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:04:52,697][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:04:52,697][base_requests.py 80][INFO]: 请求body:{
+    "userName": ""
+}
+[2022-05-11 10:04:52,697][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}
+[2022-05-11 10:04:52,698][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 10:04:52,698][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 10:04:52,698][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 10:04:52,698][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,703][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11 10:04:52,839][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,839][base_requests.py 77][INFO]: 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11 10:04:52,839][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11 10:04:52,839][base_requests.py 79][INFO]: 请求方式:get
+[2022-05-11 10:04:52,840][base_requests.py 80][INFO]: 请求body:{
+    "userName": "187555"
+}
+[2022-05-11 10:04:52,840][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}
+[2022-05-11 10:04:52,840][base_requests.py 56][INFO]: 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11 10:04:52,840][base_requests.py 66][INFO]: 预期结果的值是10011
+[2022-05-11 10:04:52,840][base_requests.py 68][INFO]: 获取真实值是10011
+[2022-05-11 10:04:52,840][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 10:04:52,846][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11 10:04:52,976][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:52,976][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11 10:04:52,976][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 10:04:52,976][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:04:52,977][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11 10:04:52,977][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}
+[2022-05-11 10:04:52,977][base_requests.py 56][INFO]: 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11 10:04:52,977][base_requests.py 66][INFO]: 预期结果的值是1
+[2022-05-11 10:04:52,977][base_requests.py 68][INFO]: 获取真实值是30003
+[2022-05-11 10:04:53,068][yaml_util.py 54][INFO]: 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11 10:04:53,201][base_requests.py 54][INFO]: ---------------接口测试开始---------------
+[2022-05-11 10:04:53,202][base_requests.py 77][INFO]: 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11 10:04:53,202][base_requests.py 78][INFO]: 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11 10:04:53,202][base_requests.py 79][INFO]: 请求方式:post
+[2022-05-11 10:04:53,202][base_requests.py 80][INFO]: 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11 10:04:53,203][base_requests.py 82][INFO]: 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyMzQ2OTQzODIiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.tnwAbZYPa-dtkQ5lZvNn381PpF9Hd6Xwob3R1xE-lzA'}
+[2022-05-11 10:04:53,203][base_requests.py 56][INFO]: 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11 10:04:53,203][base_requests.py 66][INFO]: 预期结果的值是400
+[2022-05-11 10:04:53,203][base_requests.py 68][INFO]: 获取真实值是400
+[2022-05-11 10:04:53,203][base_requests.py 73][INFO]: ---------------接口测试结束---------------
+[2022-05-11 11:34:55,113][logger.py 33][INFO]: ---测试开始---
+[2022-05-11 11:34:55,114][logger.py 34][DEBUG]: ---测试结束---
+[2022-05-11  11:47:50] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:万能验证码
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:"none"
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '686831', 'success': True}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '686831', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:骑手登录
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"smsCode\": \"686831\", \"userName\": \"15400010001\"}"
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  11:47:54] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是10003
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是10003
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是400
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是400
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是10011
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是10011
+[2022-05-11  11:47:54] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  11:47:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:54] base_requests.py -> request_log line:77 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  11:47:54] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  11:47:54] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  11:47:54] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  11:47:54] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}
+[2022-05-11  11:47:54] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  11:47:54] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  11:47:54] base_requests.py -> validate line:68 [INFO] : 获取真实值是30003
+[2022-05-11  11:47:55] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  11:47:55] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  11:47:55] base_requests.py -> request_log line:77 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  11:47:55] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  11:47:55] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  11:47:55] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  11:47:55] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDA4NzY1MTMiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.9Ri9wFNSKukK4eqJcIbc5tnGWeUgXG9bpot3a_os3D4'}
+[2022-05-11  11:47:55] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  11:47:55] base_requests.py -> validate line:66 [INFO] : 预期结果的值是400
+[2022-05-11  11:47:55] base_requests.py -> validate line:68 [INFO] : 获取真实值是400
+[2022-05-11  11:47:55] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:40] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  12:02:40] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:40] base_requests.py -> request_log line:77 [INFO] : 接口名称:万能验证码
+[2022-05-11  12:02:40] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  12:02:40] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  12:02:40] base_requests.py -> request_log line:80 [INFO] : 请求body:"none"
+[2022-05-11  12:02:40] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  12:02:40] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '919202', 'success': True}
+[2022-05-11  12:02:40] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  12:02:40] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  12:02:40] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:40] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '919202', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  12:02:40] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:40] base_requests.py -> request_log line:77 [INFO] : 接口名称:骑手登录
+[2022-05-11  12:02:40] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  12:02:40] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  12:02:40] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"smsCode\": \"919202\", \"userName\": \"15400010001\"}"
+[2022-05-11  12:02:40] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  12:02:40] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  12:02:40] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  12:02:40] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  12:02:40] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:40] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  12:02:41] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是10003
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是10003
+[2022-05-11  12:02:41] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:41] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是1
+[2022-05-11  12:02:41] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:41] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是400
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是400
+[2022-05-11  12:02:41] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:41] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:get
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是10011
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是10011
+[2022-05-11  12:02:41] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:02:41] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是1
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是30003
+[2022-05-11  12:02:41] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:54 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  12:02:41] base_requests.py -> request_log line:77 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  12:02:41] base_requests.py -> request_log line:78 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  12:02:41] base_requests.py -> request_log line:79 [INFO] : 请求方式:post
+[2022-05-11  12:02:41] base_requests.py -> request_log line:80 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  12:02:41] base_requests.py -> request_log line:82 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNDE3NjMzMDQiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.XaeI_ASOKh1sxvxbst4WoQOVeZ4TutC2iuVG5qhsfXQ'}
+[2022-05-11  12:02:41] base_requests.py -> sendRequest line:56 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  12:02:41] base_requests.py -> validate line:66 [INFO] : 预期结果的值是400
+[2022-05-11  12:02:41] base_requests.py -> validate line:68 [INFO] : 获取真实值是400
+[2022-05-11  12:02:41] base_requests.py -> validate line:73 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  12:03:24] logger.py -> <module> line:96 [INFO] : 绿色测试日志保存路径/Users/xu/PycharmProjects/auto_test/Users/xu/PycharmProjects/auto_test/log/20220511.log
+[2022-05-11  12:03:24] logger.py -> <module> line:97 [WARNING] : 颜色
+[2022-05-11  12:03:24] logger.py -> <module> line:98 [ERROR] : error
+[2022-05-11  12:03:24] logger.py -> <module> line:99 [CRITICAL] : critical
+[2022-05-11  15:05:42] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:05:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:05:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手扣减用户金额
+[2022-05-11  15:05:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:05:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:05:43] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:05:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:05:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'D7077EAB6E8B339FA8498C66B20B49E6', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:05:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:05:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:05:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:47] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:47] base_requests.py -> request_log line:57 [INFO] : 接口名称:万能验证码
+[2022-05-11  15:09:47] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  15:09:47] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:09:47] base_requests.py -> request_log line:60 [INFO] : 请求body:"none"
+[2022-05-11  15:09:47] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '824437', 'success': True}
+[2022-05-11  15:09:47] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:47] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '824437', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:47] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录
+[2022-05-11  15:09:47] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:09:47] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:09:47] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"824437\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:09:47] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:09:47] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:47] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:47] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  15:09:47] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:09:47] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:09:47] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:09:47] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:09:47] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:09:47] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:09:47] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:09:47] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:47] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:47] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  15:09:47] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:09:47] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:09:47] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  15:09:47] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}
+[2022-05-11  15:09:47] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  15:09:47] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:09:47] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:47] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:48] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  15:09:48] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:09:48] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:09:48] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  15:09:48] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:09:48] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:09:48] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:09:48] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:48] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:48] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  15:09:48] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:09:48] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:09:48] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  15:09:48] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  15:09:48] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10011
+[2022-05-11  15:09:48] base_requests.py -> validate line:48 [INFO] : 获取真实值是10011
+[2022-05-11  15:09:48] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:48] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:48] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  15:09:48] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:09:48] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:09:48] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  15:09:48] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  15:09:48] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:09:48] base_requests.py -> validate line:48 [INFO] : 获取真实值是30003
+[2022-05-11  15:09:48] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:48] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  15:09:48] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:09:48] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:09:48] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  15:09:48] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTI5ODc5MTkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.zxoz9lopNgsPYlBcyYahrkYaOaQrBP7nf1EBPhDga-c'}
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:09:48] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:09:48] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:09:48] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:09:48] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:09:48] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手扣减用户金额
+[2022-05-11  15:09:48] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:09:48] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:09:48] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:09:48] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:09:48] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': '2B8C7DD9559DE3F0AFAB61C4FABBC0EA', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:09:48] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:09:48] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:09:48] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:42] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手扣减用户金额
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'BEC20790F067485019B951C51CF5D40F', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:万能验证码
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:"none"
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '416371', 'success': True}
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '416371', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"416371\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:13:43] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:43] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  15:13:43] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:13:43] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:13:43] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  15:13:43] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+[2022-05-11  15:13:43] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:13:43] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:13:43] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:13:43] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:43] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:44] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  15:13:44] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:13:44] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:13:44] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  15:13:44] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  15:13:44] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10011
+[2022-05-11  15:13:44] base_requests.py -> validate line:48 [INFO] : 获取真实值是10011
+[2022-05-11  15:13:44] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:13:44] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:44] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  15:13:44] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:13:44] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:13:44] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  15:13:44] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  15:13:44] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:13:44] base_requests.py -> validate line:48 [INFO] : 获取真实值是30003
+[2022-05-11  15:13:44] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:13:44] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  15:13:44] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:13:44] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:13:44] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  15:13:44] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMyMjM4NjAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.jTn_Ojet4hexu62ikhHVM08lzWXIG8q01rzXEVmh8gg'}
+[2022-05-11  15:13:44] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:13:44] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:13:44] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:13:44] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:09] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:16:09] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:16:10] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:10] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  15:16:10] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:16:10] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:16:10] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:16:10] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:16:10] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'D2799141623379F562A29612C05DEE8E', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:16:10] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:16:10] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:16:10] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:10] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:10] base_requests.py -> request_log line:57 [INFO] : 接口名称:万能验证码
+[2022-05-11  15:16:10] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  15:16:10] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:16:10] base_requests.py -> request_log line:60 [INFO] : 请求body:"none"
+[2022-05-11  15:16:10] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:16:10] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '853697', 'success': True}
+[2022-05-11  15:16:10] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:16:10] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:16:10] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '853697', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"853697\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:16:11] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:16:11] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:16:11] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:16:11] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:16:11] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10011
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是10011
+[2022-05-11  15:16:11] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:11] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  15:16:11] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:16:11] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:16:11] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  15:16:11] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}
+[2022-05-11  15:16:11] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  15:16:11] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:16:11] base_requests.py -> validate line:48 [INFO] : 获取真实值是30003
+[2022-05-11  15:16:11] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:16:12] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:16:12] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  15:16:12] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:16:12] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:16:12] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  15:16:12] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTMzNzE0MzkiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.WLdoNW5kLWs0ZCZsYVL5njbgD9IUef90grHew9noIkw'}
+[2022-05-11  15:16:12] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:16:12] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:16:12] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:16:12] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:19] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:17:19] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:17:19] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:19] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  15:17:19] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:17:19] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:17:19] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:17:19] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:17:19] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': '65680550058D0B3C4B1C90F5E25159BF', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:17:19] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:17:19] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:17:19] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:万能验证码
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:"none"
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '234615', 'success': True}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '234615', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"234615\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:17:20] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10011
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是10011
+[2022-05-11  15:17:20] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:17:20] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:20] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  15:17:20] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:17:20] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:17:20] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  15:17:20] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}
+[2022-05-11  15:17:20] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  15:17:20] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:17:20] base_requests.py -> validate line:48 [INFO] : 获取真实值是30003
+[2022-05-11  15:17:21] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:17:21] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:17:21] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  15:17:21] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:17:21] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:17:21] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  15:17:21] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTM0NDA1NzAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.M-MD-yxvIcnXURlVvAM79UvVC8kqcltwq3RQYdyRzws'}
+[2022-05-11  15:17:21] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:17:21] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:17:21] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:17:21] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:56] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:28:57] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:57] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  15:28:57] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:28:57] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:57] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:28:57] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'EF3527BFD7056046E37A8B160C046878', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:28:57] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:57] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:57] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  15:28:57] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:28:57] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:57] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  15:28:57] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:28:57] admin_wallet_add_test.py -> test_adminlogin line:33 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:28:57] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:57] base_requests.py -> request_log line:57 [INFO] : 接口名称:万能验证码
+[2022-05-11  15:28:57] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/get/almighty/code
+[2022-05-11  15:28:57] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:28:57] base_requests.py -> request_log line:60 [INFO] : 请求body:"none"
+[2022-05-11  15:28:57] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': '305265', 'success': True}
+[2022-05-11  15:28:57] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:57] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '305265', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]} 
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:57] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录
+[2022-05-11  15:28:57] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:28:57] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:57] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"305265\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:28:57] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk', 'userId': 31, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:28:57] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:28:57] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:57] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:57] base_requests.py -> request_log line:57 [INFO] : 接口名称:骑手登录--验证码错误
+[2022-05-11  15:28:57] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/smscode/login
+[2022-05-11  15:28:57] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:57] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"smsCode\": \"qwe\", \"userName\": \"15400010001\"}"
+[2022-05-11  15:28:57] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:28:57] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:28:57] login_test.py -> test_login line:48 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:28:57] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:28:57] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:28:57] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:57] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:58] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息
+[2022-05-11  15:28:58] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:28:58] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:28:58] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "13720235230"
+}
+[2022-05-11  15:28:58] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'id': 26, 'userName': '13720235230', 'nickName': '小王', 'actualAmt': None, 'couponAmt': None, 'commonAddr': None, 'couponConfig': None, 'remark': None, 'createTime': '2022-04-27T08:15:02.000+00:00', 'updateTime': '2022-04-27T08:15:02.000+00:00', 'businessTel': None, 'businessUid': None}, 'success': True}
+[2022-05-11  15:28:58] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:58] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:28:58] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:58] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:58] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName为空
+[2022-05-11  15:28:58] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:28:58] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:28:58] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": ""
+}
+[2022-05-11  15:28:58] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:28:58] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:28:58] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:28:58] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:58] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]} 
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:58] base_requests.py -> request_log line:57 [INFO] : 接口名称:检查用户手机号，查询用户昵称信息---userName不存在
+[2022-05-11  15:28:58] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/username
+[2022-05-11  15:28:58] base_requests.py -> request_log line:59 [INFO] : 请求方式:get
+[2022-05-11  15:28:58] base_requests.py -> request_log line:60 [INFO] : 请求body:{
+    "userName": "187555"
+}
+[2022-05-11  15:28:58] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10011', 'message': '用户不存在', 'success': False}
+[2022-05-11  15:28:58] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10011
+[2022-05-11  15:28:58] base_requests.py -> validate line:48 [INFO] : 获取真实值是10011
+[2022-05-11  15:28:58] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:28:58] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}, 'params': {'id': '26', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:58] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细
+[2022-05-11  15:28:58] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:28:58] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:58] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": \"20\", \"userName\": \"13720235230\"}"
+[2022-05-11  15:28:58] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '30003', 'message': '用户钱包金额不够，请充值', 'success': False}
+[2022-05-11  15:28:58] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:28:58] base_requests.py -> validate line:48 [INFO] : 获取真实值是30003
+[2022-05-11  15:28:58] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}, 'params': {'id': '26', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]} 
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:28:58] base_requests.py -> request_log line:57 [INFO] : 接口名称:判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数
+[2022-05-11  15:28:58] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/rider/check/user/amount
+[2022-05-11  15:28:58] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:28:58] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"id\": \"26\", \"orderAmt\": -20, \"userName\": \"13720235230\"}"
+[2022-05-11  15:28:58] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '26', 'token': 'eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOiIzMSIsImxvZ2luVGltZSI6IjE2NTIyNTQxMzgzNDAiLCJhcHBuYW1lIjoicmlkZXJBcHAiLCJkZXZpY2VJZCI6IjEyNTQifQ.5PDt7KJorR6BsWHKLK17ORinNWSEfOX5ILrBfR_vPzk'}
+[2022-05-11  15:28:58] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '400', 'message': '参数错误', 'success': False}
+[2022-05-11  15:28:58] base_requests.py -> validate line:46 [INFO] : 预期结果的值是400
+[2022-05-11  15:28:58] base_requests.py -> validate line:48 [INFO] : 获取真实值是400
+[2022-05-11  15:28:58] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:33:19] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:33:41] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:33:53] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  15:33:53] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  15:33:54] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:33:54] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  15:33:54] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:33:54] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:33:54] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  15:33:54] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:33:54] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': '24B164406F3A28907DB0B0DE602E07B7', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  15:33:54] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  15:33:54] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  15:33:54] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  15:33:54] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  15:33:54] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  15:33:54] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  15:33:54] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  15:33:54] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  15:33:54] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  15:33:54] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  15:33:54] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  15:33:54] admin_wallet_add_test.py -> test_adminlogin line:33 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  15:33:54] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  15:33:54] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  15:33:54] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:12:44] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:13:28] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:13:49] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:13:50] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  16:13:50] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  16:13:51] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:13:51] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  16:13:51] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:13:51] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:13:51] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  16:13:51] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:13:51] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  16:13:51] admin_wallet_add_test.py -> test_adminlogin line:35 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  16:13:51] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  16:13:51] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  16:13:51] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:17:42] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'server': {'test': 'http://127.0.0.1:8888/', 'dev': 'http://api.zreai.com:606/api/private/v1/'}, 'request_headers': {'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'}, 'userName': 18702766541, 'AdminUserName': 'admin'} 
+[2022-05-11  16:18:00] yaml_util.py -> extractdata_render_params line:54 [INFO] : 替换后的yaml文件{'name': 'admin登录', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]}} 
+[2022-05-11  16:31:50] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:31:50] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  16:31:50] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:31:50] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  16:31:50] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:31:50] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:31:50] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  16:31:50] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:31:50] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': '5B3DF1FE5D3A2C0AA2DA5782F2E5D51B', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  16:31:50] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  16:31:50] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  16:31:50] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:31:50] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  16:31:50] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:31:50] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  16:31:50] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:31:50] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:31:50] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  16:31:50] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:31:50] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  16:31:50] admin_wallet_add_test.py -> test_adminlogin line:32 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  16:31:50] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  16:31:50] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  16:31:50] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:35:54] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:36:26] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:36:41] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:36:41] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  16:36:41] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:36:41] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  16:36:41] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:36:41] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:36:41] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  16:36:41] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:36:41] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'C89F44C73D10708DB4D247334A54C214', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  16:36:41] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  16:36:41] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  16:36:41] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:36:41] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  16:36:41] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:36:41] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  16:36:41] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:36:41] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:36:41] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  16:36:41] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:36:41] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  16:36:41] admin_wallet_add_test.py -> test_adminlogin line:31 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  16:36:41] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  16:36:41] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  16:36:41] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:39:52] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  16:39:52] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  16:39:53] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:39:53] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  16:39:53] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:39:53] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:39:53] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  16:39:53] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:39:53] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'A875CBC1EECB8F190EC736721BB8D1D0', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  16:39:53] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  16:39:53] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  16:39:53] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  16:39:53] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  16:39:53] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  16:39:53] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  16:39:53] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  16:39:53] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  16:39:53] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  16:39:53] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  16:39:53] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  16:39:53] admin_wallet_add_test.py -> test_adminlogin line:31 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  16:39:53] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  16:39:53] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  16:39:53] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  18:05:33] run.py -> init_report line:18 [INFO] : 
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+    | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+     \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+          |_|
+          Starting      ...     ...     ...
+        
+[2022-05-11  18:05:34] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 'pqbxptxm909'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  18:05:34] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  18:05:34] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录
+[2022-05-11  18:05:34] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  18:05:34] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  18:05:34] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": \"pqbxptxm909\"}"
+[2022-05-11  18:05:34] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  18:05:34] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'A12A8A56325463AA705429599107B098', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+[2022-05-11  18:05:34] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  18:05:34] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  18:05:34] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  18:05:34] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': 'admin', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]} 
+[2022-05-11  18:05:34] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  18:05:34] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin登录-密码错误
+[2022-05-11  18:05:34] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/login
+[2022-05-11  18:05:34] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  18:05:34] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"admin\", \"password\": 0}"
+[2022-05-11  18:05:34] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+[2022-05-11  18:05:34] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '10003', 'message': '验证码错误', 'success': False}
+[2022-05-11  18:05:34] admin_wallet_add_test.py -> test_adminlogin line:31 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  18:05:34] base_requests.py -> validate line:46 [INFO] : 预期结果的值是10003
+[2022-05-11  18:05:34] base_requests.py -> validate line:48 [INFO] : 获取真实值是10003
+[2022-05-11  18:05:34] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------
+[2022-05-11  18:05:34] yaml_util.py -> extractdata_render_params line:60 [INFO] : 替换后的yaml文件{'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'A12A8A56325463AA705429599107B098'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 1}}]} 
+[2022-05-11  18:05:35] base_requests.py -> sendRequest line:34 [INFO] : ---------------接口测试开始---------------
+[2022-05-11  18:05:35] base_requests.py -> request_log line:57 [INFO] : 接口名称:admin新增加客户
+[2022-05-11  18:05:35] base_requests.py -> request_log line:58 [INFO] : 请求地址:http://api.errand.u57.net/api/admin/wallet/add
+[2022-05-11  18:05:35] base_requests.py -> request_log line:59 [INFO] : 请求方式:post
+[2022-05-11  18:05:35] base_requests.py -> request_log line:60 [INFO] : 请求body:"{\"userName\": \"$PhoneMain\", \"nickName\": \"$updatenickName\", \"actualAmt\": 20, \"couponAmt\": 2, \"remark\": \"fffffffffff\"}"
+[2022-05-11  18:05:35] base_requests.py -> request_log line:62 [INFO] : 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': 'A12A8A56325463AA705429599107B098'}
+[2022-05-11  18:05:35] base_requests.py -> sendRequest line:36 [INFO] : 实际结果:{'code': '1', 'message': None, 'errMsgParamList': None, 'success': True}
+[2022-05-11  18:05:35] admin_wallet_add_test.py -> test_admin_wallet_add line:50 [INFO] : token获取失败或者此为登录失败用例
+[2022-05-11  18:05:35] base_requests.py -> validate line:46 [INFO] : 预期结果的值是1
+[2022-05-11  18:05:35] base_requests.py -> validate line:48 [INFO] : 获取真实值是1
+[2022-05-11  18:05:35] base_requests.py -> validate line:53 [INFO] : ---------------接口测试结束---------------

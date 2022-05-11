@@ -1,0 +1,108 @@
+{
+  "uid" : "c24fd97ac0bd6b18",
+  "name" : "test_ridercheckuseramount[caseinfo1]",
+  "fullName" : "test_case.ridercheckusername_test.Testrider#test_ridercheckuseramount",
+  "historyId" : "de01634d1573bb685167be66eb72aa4f",
+  "time" : {
+    "start" : 1652234693066,
+    "stop" : 1652234693204,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1652234691974,
+      "stop" : 1652234691974,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3527ce837dfcbb65",
+      "name" : "log",
+      "source" : "3527ce837dfcbb65.txt",
+      "type" : "text/plain",
+      "size" : 1885
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "判断金额是否足够，同时计算出余额和优惠金额的扣除明细"
+  }, {
+    "name" : "tag",
+    "value" : "dependency"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "ridercheckusername_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testrider"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "46646-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.ridercheckusername_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数', 'request': {'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '$id', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f5089071f2c66e2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652234520510,
+        "stop" : 1652234520640,
+        "duration" : 130
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dependency" ]
+  },
+  "source" : "c24fd97ac0bd6b18.json",
+  "parameterValues" : [ "{'name': '判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数', 'request': {'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '$id', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+}

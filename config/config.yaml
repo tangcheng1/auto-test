@@ -1,0 +1,16 @@
+server:
+  # api服务
+  api: http://api.errand.u57.net
+  # admin 服务
+  admin: http://api.errand.u57.net
+
+# 基准的请求头信息
+request_headers:
+  Accept-Encoding: gzip, deflate
+  Accept-Language: zh-CN,zh;q=0.9
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+
+RiderUserName: 18702766541   #骑手名字
+
+admin_username: admin   #运营后台账户
+admin_password: pqbxptxm909   #运营后台账户

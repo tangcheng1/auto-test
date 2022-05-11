@@ -1,0 +1,95 @@
+{
+  "uid" : "385949ecfb5f30de",
+  "name" : "test_ridercostuseramount[caseinfo0]",
+  "fullName" : "test_case.ridercheckusername_test.Testrider#test_ridercostuseramount",
+  "historyId" : "45e8034728a8edb3b3a6624820205b0f",
+  "time" : {
+    "start" : 1652234693206,
+    "stop" : 1652234693206,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: test_ridercostuseramount[caseinfo0] depends on Testrider::test_ridercheckuseramount",
+  "statusTrace" : "('/Users/xu/PycharmProjects/auto_test/venv/lib/python3.8/site-packages/pytest_dependency.py', 103, 'Skipped: test_ridercostuseramount[caseinfo0] depends on Testrider::test_ridercheckuseramount')",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1652234691974,
+      "stop" : 1652234691974,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "骑手扣减用户金额"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['Testrider::test_ridercheckuseramount'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "ridercheckusername_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testrider"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "46646-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.ridercheckusername_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '骑手扣减用户金额', 'request': {'method': 'get', 'path': '/api/rider/cost/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5ab11a36218e60cf",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: test_ridercostuseramount[caseinfo0] depends on Testrider::test_ridercheckuseramount",
+      "time" : {
+        "start" : 1652234520642,
+        "stop" : 1652234520642,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['Testrider::test_ridercheckuseramount'])" ]
+  },
+  "source" : "385949ecfb5f30de.json",
+  "parameterValues" : [ "{'name': '骑手扣减用户金额', 'request': {'method': 'get', 'path': '/api/rider/cost/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+}

@@ -1,0 +1,4 @@
+[2022-05-11  11:35:52] test.py -> <module> line:96 [INFO] : 绿色测试日志保存路径./log2022-5-11.log
+[2022-05-11  11:35:52] test.py -> <module> line:97 [WARNING] : 颜色
+[2022-05-11  11:35:52] test.py -> <module> line:98 [ERROR] : error
+[2022-05-11  11:35:52] test.py -> <module> line:99 [CRITICAL] : critical

@@ -9,13 +9,23 @@ import time
 
 import pytest,os,subprocess
 import  allure
-
+from tools.logger import logger
 from pathlib import Path
 
 def init_report():
 
     # subprocess.call(cmd, shell=True)
-    cmd="allure generate /Users/xu/PycharmProjects/auto_test/result -o  /Users/xu/PycharmProjects/auto_test/report --clean"
+    logger.info("""
+                     _    _         _      _____         _
+      __ _ _ __ (_)  / \\  _   _| |_ __|_   _|__  ___| |_
+     / _` | '_ \\| | / _ \\| | | | __/ _ \\| |/ _ \\/ __| __|
+    | (_| | |_) | |/ ___ \\ |_| | || (_) | |  __/\\__ \\ |_
+     \\__,_| .__/|_/_/   \\_\\__,_|\\__\\___/|_|\\___||___/\\__|
+          |_|
+          Starting      ...     ...     ...
+        """)
+    pytest.main(["-s", "test_case/test_admin", "--alluredir=report/data"])
+    cmd="allure generate /Users/xu/PycharmProjects/auto_test/report/data -o  /Users/xu/PycharmProjects/auto_test/report/html --clean"
     cmdlog=os.popen(cmd)
     cmdlogs=cmdlog.read()
     print(cmdlogs)
@@ -25,6 +35,5 @@ def init_report():
 
 
 
-# pytest.main(["-s","--reruns=2", "android/testcase","--alluredir=data_yaml"])
-pytest.main(["-s", "test_case","--alluredir=result"])
-init_report()
+if __name__ == '__main__':
+    init_report()
