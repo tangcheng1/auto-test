@@ -4,13 +4,7 @@
 # @Author  : tc
 # @File    : random_function.py
 # @Description :
-import json
 import random
-from string import Template
-
-import yaml
-
-from tools.yaml_util import YamlUtil
 
 
 def random_name():
@@ -81,10 +75,6 @@ def random_phone():
     return "1{}{}{}".format(second, third, last)
 
 
-
-
-
 if __name__ == '__main__':
     random_name()
     random_phone()
-

@@ -1,19 +1,8 @@
 {
-  "total" : 5,
+  "total" : 2,
   "items" : [ {
-    "uid" : "68d557d7a0ebd0fbdc753a3d3bc73c3c",
-    "name" : "判断金额是否足够，同时计算出余额和优惠金额的扣除明细",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "047c54234c5a64be72e976f82bb8f5eb",
-    "name" : "检查用户手机号，查询用户昵称信息",
+    "uid" : "7e9fd5286e211b2a767fba45ac135ee2",
+    "name" : "admin新增客户",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -23,8 +12,8 @@
       "total" : 3
     }
   }, {
-    "uid" : "d926bcdc6c29dca87d490e3ceadf981c",
-    "name" : "骑手登录接口",
+    "uid" : "3fd92c8dae684a64daf5aa3dee1d583a",
+    "name" : "admin登录接口",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -32,28 +21,6 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
-    }
-  }, {
-    "uid" : "2ba182a7e0b03980e718058943f7afe3",
-    "name" : "万能验证码",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "556f5e932c9cf04c831aa0be38f75930",
-    "name" : "骑手扣减用户金额",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
     }
   } ]
 }

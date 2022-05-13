@@ -1,30 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError",
-      "children" : [ {
-        "name" : "test_ridercheckuseramount[caseinfo0]",
-        "uid" : "d2e7f0be8a1a2348",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1652234692844,
-          "stop" : 1652234692978,
-          "duration" : 134
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 1,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'name': '判断金额是否足够，同时计算出余额和优惠金额的扣除明细', 'request': {'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '$id', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-      } ],
-      "uid" : "a0017ad855102fea08b8682d27fec4ca"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
+  "children" : [ ],
   "name" : "categories"
 }

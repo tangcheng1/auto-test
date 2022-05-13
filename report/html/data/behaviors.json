@@ -1,178 +1,98 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
-    "name" : "万能验证码",
+    "name" : "admin登录接口",
     "children" : [ {
-      "name" : "test_almightycode[caseinfo0]",
-      "uid" : "c1efd695b08d1d3b",
-      "parentUid" : "2ba182a7e0b03980e718058943f7afe3",
+      "name" : "test_adminlogin[caseinfo0]",
+      "uid" : "24a4e248ffa9f4c2",
+      "parentUid" : "3fd92c8dae684a64daf5aa3dee1d583a",
       "status" : "passed",
       "time" : {
-        "start" : 1652234691976,
-        "stop" : 1652234692146,
-        "duration" : 170
+        "start" : 1652326312047,
+        "stop" : 1652326312220,
+        "duration" : 173
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : true,
-      "parameters" : [ "{'name': '万能验证码', 'request': {'method': 'get', 'path': '/api/admin/get/almighty/code', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': 'none', 'extract': {'smsCode': '$.data_yaml'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-    } ],
-    "uid" : "2ba182a7e0b03980e718058943f7afe3"
-  }, {
-    "name" : "骑手登录接口",
-    "children" : [ {
-      "name" : "test_login[caseinfo0]",
-      "uid" : "90590c9c20514f41",
-      "parentUid" : "d926bcdc6c29dca87d490e3ceadf981c",
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "{'name': 'admin登录', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': '$admin_password'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+    }, {
+      "name" : "test_adminlogin[caseinfo1]",
+      "uid" : "49d99b50c66f1b21",
+      "parentUid" : "3fd92c8dae684a64daf5aa3dee1d583a",
       "status" : "passed",
       "time" : {
-        "start" : 1652234692149,
-        "stop" : 1652234692290,
+        "start" : 1652326312222,
+        "stop" : 1652326312365,
+        "duration" : 143
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "{'name': 'admin登录-密码错误', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]}}" ]
+    } ],
+    "uid" : "3fd92c8dae684a64daf5aa3dee1d583a"
+  }, {
+    "name" : "admin新增客户",
+    "children" : [ {
+      "name" : "test_admin_wallet_add[caseinfo0]",
+      "uid" : "1973d8f8cde298f8",
+      "parentUid" : "7e9fd5286e211b2a767fba45ac135ee2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652326312366,
+        "stop" : 1652326313861,
+        "duration" : 1495
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+    }, {
+      "name" : "test_admin_wallet_add[caseinfo1]",
+      "uid" : "250f041bddf7f550",
+      "parentUid" : "7e9fd5286e211b2a767fba45ac135ee2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652326313863,
+        "stop" : 1652326314004,
         "duration" : 141
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
-      "retriesCount" : 1,
+      "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '骑手登录', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': '$smsCode', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': '1'}}]}}" ]
+      "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
     }, {
-      "name" : "test_login[caseinfo1]",
-      "uid" : "f672d10a504735b9",
-      "parentUid" : "d926bcdc6c29dca87d490e3ceadf981c",
+      "name" : "test_admin_wallet_add[caseinfo2]",
+      "uid" : "407c31fa94a67793",
+      "parentUid" : "7e9fd5286e211b2a767fba45ac135ee2",
       "status" : "passed",
       "time" : {
-        "start" : 1652234692291,
-        "stop" : 1652234692426,
-        "duration" : 135
+        "start" : 1652326314006,
+        "stop" : 1652326314147,
+        "duration" : 141
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
-      "retriesCount" : 1,
+      "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '骑手登录--验证码错误', 'request': {'method': 'post', 'path': '/api/rider/smscode/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'smsCode': 'qwe', 'userName': '15400010001'}, 'validate': [{'equal_to': {'$.code': 10003}}]}}" ]
+      "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
     } ],
-    "uid" : "d926bcdc6c29dca87d490e3ceadf981c"
-  }, {
-    "name" : "检查用户手机号，查询用户昵称信息",
-    "children" : [ {
-      "name" : "test_Testridercheckusername[caseinfo0]",
-      "uid" : "75591ffbb1d80016",
-      "parentUid" : "047c54234c5a64be72e976f82bb8f5eb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1652234692428,
-        "stop" : 1652234692564,
-        "duration" : 136
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '检查用户手机号，查询用户昵称信息', 'request': {'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-    }, {
-      "name" : "test_Testridercheckusername[caseinfo1]",
-      "uid" : "66f1aa7933653f31",
-      "parentUid" : "047c54234c5a64be72e976f82bb8f5eb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1652234692566,
-        "stop" : 1652234692699,
-        "duration" : 133
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '检查用户手机号，查询用户昵称信息---userName为空', 'request': {'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'userName': ''}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
-    }, {
-      "name" : "test_Testridercheckusername[caseinfo2]",
-      "uid" : "405b9680775b2a47",
-      "parentUid" : "047c54234c5a64be72e976f82bb8f5eb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1652234692701,
-        "stop" : 1652234692841,
-        "duration" : 140
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '检查用户手机号，查询用户昵称信息---userName不存在', 'request': {'method': 'get', 'path': '/api/rider/check/username', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'userName': '187555'}, 'validate': [{'equal_to': {'$.code': 10011}}]}}" ]
-    } ],
-    "uid" : "047c54234c5a64be72e976f82bb8f5eb"
-  }, {
-    "name" : "判断金额是否足够，同时计算出余额和优惠金额的扣除明细",
-    "children" : [ {
-      "name" : "test_ridercheckuseramount[caseinfo0]",
-      "uid" : "d2e7f0be8a1a2348",
-      "parentUid" : "68d557d7a0ebd0fbdc753a3d3bc73c3c",
-      "status" : "failed",
-      "time" : {
-        "start" : 1652234692844,
-        "stop" : 1652234692978,
-        "duration" : 134
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '判断金额是否足够，同时计算出余额和优惠金额的扣除明细', 'request': {'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '$id', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-    }, {
-      "name" : "test_ridercheckuseramount[caseinfo1]",
-      "uid" : "c24fd97ac0bd6b18",
-      "parentUid" : "68d557d7a0ebd0fbdc753a3d3bc73c3c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1652234693066,
-        "stop" : 1652234693204,
-        "duration" : 138
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '判断金额是否足够，同时计算出余额和优惠金额的扣除明细--orderAmt为负数', 'request': {'method': 'post', 'path': '/api/rider/check/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'id': '$id', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': -20, 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
-    } ],
-    "uid" : "68d557d7a0ebd0fbdc753a3d3bc73c3c"
-  }, {
-    "name" : "骑手扣减用户金额",
-    "children" : [ {
-      "name" : "test_ridercostuseramount[caseinfo0]",
-      "uid" : "385949ecfb5f30de",
-      "parentUid" : "556f5e932c9cf04c831aa0be38f75930",
-      "status" : "skipped",
-      "time" : {
-        "start" : 1652234693206,
-        "stop" : 1652234693206,
-        "duration" : 0
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 1,
-      "retriesStatusChange" : false,
-      "parameters" : [ "{'name': '骑手扣减用户金额', 'request': {'method': 'get', 'path': '/api/rider/cost/user/amount', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$token'}, 'params': {'id': '$id', 'orderAmt': '20', 'userName': '13720235230'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-    } ],
-    "uid" : "556f5e932c9cf04c831aa0be38f75930"
+    "uid" : "7e9fd5286e211b2a767fba45ac135ee2"
   } ],
   "name" : "behaviors"
 }

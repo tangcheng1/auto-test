@@ -57,13 +57,22 @@ class YamlUtil:
         tempTemplate1 = Template(str(yaml_config_data))     #原数据的来源
         c2 = tempTemplate1.safe_substitute(extractdata)  #替换数据的来源
         yaml_data = yaml.safe_load(c2)
-        logger.info("替换后的yaml文件{} ".format(yaml_data))
+        # logger.info("替换后的yaml文件{} ".format(yaml_data))
         return yaml_data
 
-    # 替换数据： casedata：来源数据，json格式；value：带$的名称；valueupdate：替换后的数据
+    # # 替换数据： casedata：来源数据，json格式；value：带$的名称；valueupdate：替换后的数据
+    # @staticmethod
+    # def data_update_params(casedata,value,valueupdate):
+    #     tempTemplate1 = Template(str(casedata))  # 原数据的来源
+    #     c1 = tempTemplate1.safe_substitute({value:valueupdate}) # 替换数据的来源
+    #     update_params = yaml.safe_load(c1)
+    #     return update_params
+
+
+    # 替换数据： casedata：来源数据，json格式；updatedict为要替换的值必须为dict类型，key：带$的名称；value：替换后的数据
     @staticmethod
-    def data_update_params(casedata,value,valueupdate):
+    def data_update_params(casedata,updatedict):
         tempTemplate1 = Template(str(casedata))  # 原数据的来源
-        c1 = tempTemplate1.safe_substitute({value:valueupdate}) # 替换数据的来源
+        c1 = tempTemplate1.safe_substitute(updatedict) # 替换数据的来源
         update_params = yaml.safe_load(c1)
         return update_params

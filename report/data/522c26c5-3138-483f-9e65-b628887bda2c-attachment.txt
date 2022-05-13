@@ -1,0 +1,10 @@
+INFO     test:base_requests.py:35 ---------------接口测试开始---------------
+INFO     test:base_requests.py:58 接口名称:admin登录
+INFO     test:base_requests.py:59 请求地址:http://api.errand.u57.net/api/admin/login
+INFO     test:base_requests.py:60 请求方式:post
+INFO     test:base_requests.py:61 请求body:{'userName': 'admin', 'password': 'pqbxptxm909'}
+INFO     test:base_requests.py:63 请求头{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}
+INFO     test:base_requests.py:37 实际结果:{'code': '1', 'message': '接口返回成功', 'errMsgParamList': None, 'data': {'token': 'C1DC26421363047351D5E133032F554B', 'userId': 1, 'suggestChangePwd': None}, 'success': True}
+INFO     test:base_requests.py:47 预期结果的值是1
+INFO     test:base_requests.py:49 获取真实值是1
+INFO     test:base_requests.py:54 ---------------接口测试结束---------------

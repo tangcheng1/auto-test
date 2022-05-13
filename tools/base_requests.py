@@ -14,8 +14,9 @@ class Utils:
 
     @staticmethod
     # 重写post 和get请求，方便自动去请求
-    def sendRequest(name, method, url, data, headers, **kwargs):
+    def sendRequest(name, method, url, params, headers, **kwargs):
         # 把请求方法改成小写
+        # print(data)
         method = str(method).lower()
         rep = None
         # 用请求路径和域名拼接成完成的请求链接
@@ -23,16 +24,16 @@ class Utils:
         url = URL + url
         # get请求以params接参数
         if method == "get":
-            rep = request(method=method, url=url, params=data, headers=headers, **kwargs)
+            rep = request(method=method, url=url, params=params, headers=headers, **kwargs)
         # post请求以data接参数,原因：data只能传输简单的只有键值对的dict或者str格式的数据，json一般只能传输dict格式，简单复杂的都可以
         # data可以满足多种格式，那我们只需把都转成str类型
         elif method == "post":
             # 把键值对转换成str类型
-            data = json.dumps(data)
-            rep = request(method=method, url=url, data=data, headers=headers, **kwargs)
+            body = json.dumps(params)
+            rep = request(method=method, url=url, data=body, headers=headers, **kwargs)
         # 打印请求前日志
         logger.info("---------------接口测试开始---------------")
-        Utils.request_log(name, method, url, data, headers)
+        Utils.request_log(name, method, url, params, headers)
         logger.info("实际结果:{}".format(rep.json()))
         return rep.json()
 
@@ -50,14 +51,14 @@ class Utils:
                         assert actual_val == item_expect
                     else:
                         logger.info("-------暂时不支持该断言方法---------")
-        logger.info("---------------接口测试结束---------------")
+        logger.info("---------------接口测试结束---------------\n")
 
     @staticmethod
     def request_log(name, method, url, data=None, headers=None, files=None, cookies=None, **kwargs):
         logger.info("接口名称:{}".format(name))
         logger.info("请求地址:{}".format(url))
         logger.info("请求方式:{}".format(method))
-        logger.info("请求body:{}".format(json.dumps(data, indent=4, ensure_ascii=False)))
+        logger.info("请求body:{}".format(data, indent=4, ensure_ascii=False))
         # Python3中，json在做dumps操作时，会将中文转换成unicode编码，因此设置 ensure_ascii=False
         logger.info("请求头{}".format(headers, indent=4, ensure_ascii=False))
         # logger.info("接口请求 params 参数 ==>> {}".format(complexjson.dumps(params, indent=4, ensure_ascii=False)))

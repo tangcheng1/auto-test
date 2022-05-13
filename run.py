@@ -24,7 +24,7 @@ def init_report():
           |_|
           Starting      ...     ...     ...
         """)
-    pytest.main(["-s", "test_case/test_admin", "--alluredir=report/data"])
+    pytest.main(["-vs", "test_case/test_admin", "--alluredir=report/data"])
     cmd="allure generate /Users/xu/PycharmProjects/auto_test/report/data -o  /Users/xu/PycharmProjects/auto_test/report/html --clean"
     cmdlog=os.popen(cmd)
     cmdlogs=cmdlog.read()
@@ -36,4 +36,5 @@ def init_report():
 
 
 if __name__ == '__main__':
-    init_report()
+    pytest.main(["-vs", "test_case/test_admin", "--alluredir=report/data"])
+    # init_report()
