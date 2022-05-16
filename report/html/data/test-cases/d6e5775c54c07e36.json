@@ -1,0 +1,126 @@
+{
+  "uid" : "d6e5775c54c07e36",
+  "name" : "test_admin_wallet_recharge[caseinfo0]",
+  "fullName" : "test_case.test_admin.admin_wallet_add_test#test_admin_wallet_recharge",
+  "historyId" : "6f53296b7f9845de10fe4cb40554bde3",
+  "time" : {
+    "start" : 1652687236427,
+    "stop" : 1652687237288,
+    "duration" : 861
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: FAILURE: 充值金额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:209 in test_admin_wallet_recharge() -> check.equal(i['actualAmt'], float(actualamt)+10, \"充值金额断言\")\nFAILURE: 剩余充值总额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:239 in test_admin_wallet_recharge() -> check.equal(i['remainActualAmt'], float(actualamt)+10, \"剩余充值总额断言\")\n------------------------------------------------------------\nFailed Checks: 2",
+  "statusTrace" : "FAILURE: 充值金额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:209 in test_admin_wallet_recharge() -> check.equal(i['actualAmt'], float(actualamt)+10, \"充值金额断言\")\nFAILURE: 剩余充值总额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:239 in test_admin_wallet_recharge() -> check.equal(i['remainActualAmt'], float(actualamt)+10, \"剩余充值总额断言\")\n------------------------------------------------------------\nFailed Checks: 2",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "test_adminlogin",
+    "time" : {
+      "start" : 1652687234259,
+      "stop" : 1652687234437,
+      "duration" : 178
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1652687234259,
+      "stop" : 1652687234259,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: FAILURE: 充值金额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:209 in test_admin_wallet_recharge() -> check.equal(i['actualAmt'], float(actualamt)+10, \"充值金额断言\")\nFAILURE: 剩余充值总额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:239 in test_admin_wallet_recharge() -> check.equal(i['remainActualAmt'], float(actualamt)+10, \"剩余充值总额断言\")\n------------------------------------------------------------\nFailed Checks: 2",
+    "statusTrace" : "FAILURE: 充值金额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:209 in test_admin_wallet_recharge() -> check.equal(i['actualAmt'], float(actualamt)+10, \"充值金额断言\")\nFAILURE: 剩余充值总额断言\nassert 72.49 == 72.49000000000001\n  +72.49\n  -72.49000000000001\ntest_case/test_admin/admin_wallet_add_test.py:239 in test_admin_wallet_recharge() -> check.equal(i['remainActualAmt'], float(actualamt)+10, \"剩余充值总额断言\")\n------------------------------------------------------------\nFailed Checks: 2",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "130bd04786f852d",
+      "name" : "log",
+      "source" : "130bd04786f852d.txt",
+      "type" : "text/plain",
+      "size" : 6876
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "clear_yaml::0",
+    "time" : {
+      "start" : 1652687237289,
+      "stop" : 1652687237289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin充值接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_admin"
+  }, {
+    "name" : "suite",
+    "value" : "admin_wallet_add_test"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "58920-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_admin.admin_wallet_add_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6e5775c54c07e36.json",
+  "parameterValues" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+}

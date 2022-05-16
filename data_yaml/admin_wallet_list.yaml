@@ -15,3 +15,21 @@
     validate:
       - equal_to:
           $.code: 1
+-
+  name: admin客户钱包列表--搜索
+  request:
+    method: post
+    path: /api/admin/wallet/list
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36
+      deviceId: '1254'
+      Content-Type: application/json
+      token: $amintoken
+    params:
+      pageSize: 10
+      nextPageId: ""
+      userName: $PhoneMain
+
+    validate:
+      - equal_to:
+          $.code: 1

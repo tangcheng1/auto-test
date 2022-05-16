@@ -1,5 +1,72 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
-  "name" : "categories"
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "a68c76c28a5d7c13",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652695704408,
+          "stop" : 1652695704554,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "1f52dfe64e1ef88b",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652695704626,
+          "stop" : 1652695704775,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加客户--重复添加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='api.errand.u57.net', port=80): Max retries exceeded with url: /api/admin/wallet/log/list (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d2aae20>: Failed to establish a new connection: [Errno 60] Operation timed out'))",
+      "children" : [ {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "91702bbecfab4f28",
+        "parentUid" : "595b086012cfd9f8e333191a9eb55180",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652695705805,
+          "stop" : 1652695781610,
+          "duration" : 75805
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "595b086012cfd9f8e333191a9eb55180"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

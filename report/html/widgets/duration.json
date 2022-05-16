@@ -1,49 +1,189 @@
 [ {
-  "uid" : "24a4e248ffa9f4c2",
-  "name" : "test_adminlogin[caseinfo0]",
+  "uid" : "14578fc895e2f28a",
+  "name" : "test_admin_rider_list[caseinfo1]",
   "time" : {
-    "start" : 1652326312047,
-    "stop" : 1652326312220,
-    "duration" : 173
+    "start" : 1652695701673,
+    "stop" : 1652695701811,
+    "duration" : 138
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "407c31fa94a67793",
-  "name" : "test_admin_wallet_add[caseinfo2]",
+  "uid" : "e7983391f130d4eb",
+  "name" : "test_admin_wallet_add[caseinfo4]",
   "time" : {
-    "start" : 1652326314006,
-    "stop" : 1652326314147,
-    "duration" : 141
+    "start" : 1652695704927,
+    "stop" : 1652695705071,
+    "duration" : 144
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "49d99b50c66f1b21",
+  "uid" : "9a262f229625551",
   "name" : "test_adminlogin[caseinfo1]",
   "time" : {
-    "start" : 1652326312222,
-    "stop" : 1652326312365,
-    "duration" : 143
+    "start" : 1652686727874,
+    "stop" : 1652686728029,
+    "duration" : 155
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1973d8f8cde298f8",
+  "uid" : "407f80748dd78117",
   "name" : "test_admin_wallet_add[caseinfo0]",
   "time" : {
-    "start" : 1652326312366,
-    "stop" : 1652326313861,
-    "duration" : 1495
+    "start" : 1652695702576,
+    "stop" : 1652695704406,
+    "duration" : 1830
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "250f041bddf7f550",
+  "uid" : "aa8ea27bc61f25c8",
+  "name" : "test_admin_rider_list[caseinfo2]",
+  "time" : {
+    "start" : 1652695701813,
+    "stop" : 1652695701967,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62a95e37abde70bb",
+  "name" : "test_admin_wallet_list[caseinfo0]",
+  "time" : {
+    "start" : 1652695705074,
+    "stop" : 1652695705216,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b703a4f4f0d1da7",
+  "name" : "test_admin_rider_list[caseinfo0]",
+  "time" : {
+    "start" : 1652695701522,
+    "stop" : 1652695701669,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd9ed0c09e7c6bbd",
+  "name" : "test_admin_wallet_list[caseinfo1]",
+  "time" : {
+    "start" : 1652695705218,
+    "stop" : 1652695705354,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fe46b9dd0e6e5d5",
+  "name" : "test_admin_wallet_edit[caseinfo0]",
+  "time" : {
+    "start" : 1652695705505,
+    "stop" : 1652695705801,
+    "duration" : 296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "488982a68c7e548c",
+  "name" : "test_admin_wallet_add[caseinfo3]",
+  "time" : {
+    "start" : 1652695704784,
+    "stop" : 1652695704924,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f52dfe64e1ef88b",
+  "name" : "test_admin_wallet_add[caseinfo2]",
+  "time" : {
+    "start" : 1652695704626,
+    "stop" : 1652695704775,
+    "duration" : 149
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a68c76c28a5d7c13",
   "name" : "test_admin_wallet_add[caseinfo1]",
   "time" : {
-    "start" : 1652326313863,
-    "stop" : 1652326314004,
+    "start" : 1652695704408,
+    "stop" : 1652695704554,
+    "duration" : 146
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "32f5fa041a23350",
+  "name" : "test_admin_rider_delete[caseinfo0]",
+  "time" : {
+    "start" : 1652695702273,
+    "stop" : 1652695702574,
+    "duration" : 301
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c01c777166b5944a",
+  "name" : "test_admin_rider_add[caseinfo0]",
+  "time" : {
+    "start" : 1652695701227,
+    "stop" : 1652695701376,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5820ab7c2baff8fb",
+  "name" : "test_admin_wallet_log_list[caseinfo0]",
+  "time" : {
+    "start" : 1652695705356,
+    "stop" : 1652695705503,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72d3ceabf5197232",
+  "name" : "test_adminlogin[caseinfo0]",
+  "time" : {
+    "start" : 1652686726735,
+    "stop" : 1652686727872,
+    "duration" : 1137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91702bbecfab4f28",
+  "name" : "test_admin_wallet_recharge[caseinfo0]",
+  "time" : {
+    "start" : 1652695705805,
+    "stop" : 1652695781610,
+    "duration" : 75805
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a014ad2185502f2f",
+  "name" : "test_admin_rider_update[caseinfo0]",
+  "time" : {
+    "start" : 1652695701969,
+    "stop" : 1652695702271,
+    "duration" : 302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8e2e120ccb9c600",
+  "name" : "test_admin_rider_add[caseinfo1]",
+  "time" : {
+    "start" : 1652695701379,
+    "stop" : 1652695701520,
     "duration" : 141
   },
   "status" : "passed",

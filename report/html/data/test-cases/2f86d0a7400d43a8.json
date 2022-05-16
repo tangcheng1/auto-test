@@ -1,0 +1,93 @@
+{
+  "uid" : "2f86d0a7400d43a8",
+  "name" : "test_admin_wallet_log_list[caseinfo0]",
+  "fullName" : "test_case.test_admin.admin_wallet_add_test#test_admin_wallet_log_list",
+  "historyId" : "c64219fff3f1fd350b43460a8b6e5322",
+  "time" : {
+    "start" : 1652687181053,
+    "stop" : 1652687181053,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "Failed: ScopeMismatch: You tried to access the 'function' scoped fixture 'caseinfo' with a 'session' scoped request object, involved factories\ntest_case/test_admin/conftest.py:13:  def test_adminlogin(caseinfo)\nvenv/lib/python3.8/site-packages/_pytest/fixtures.py:386:  def get_direct_param_fixture_func(request)",
+  "statusTrace" : "ScopeMismatch: You tried to access the 'function' scoped fixture 'caseinfo' with a 'session' scoped request object, involved factories\ntest_case/test_admin/conftest.py:13:  def test_adminlogin(caseinfo)\nvenv/lib/python3.8/site-packages/_pytest/fixtures.py:386:  def get_direct_param_fixture_func(request)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1652687181035,
+      "stop" : 1652687181035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "clear_yaml::0",
+    "time" : {
+      "start" : 1652687181062,
+      "stop" : 1652687181063,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin充值记录"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_admin"
+  }, {
+    "name" : "suite",
+    "value" : "admin_wallet_add_test"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "58896-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_admin.admin_wallet_add_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2f86d0a7400d43a8.json",
+  "parameterValues" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+}

@@ -1,18 +1,70 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
   "children" : [ {
     "name" : "xudeMac-mini.local",
     "children" : [ {
-      "name" : "51880-MainThread",
+      "name" : "58405-MainThread",
       "children" : [ {
-        "name" : "test_admin_wallet_add[caseinfo2]",
-        "uid" : "407c31fa94a67793",
-        "parentUid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b",
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "70e1f001fad7567f",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
         "status" : "passed",
         "time" : {
-          "start" : 1652326314006,
-          "stop" : 1652326314147,
-          "duration" : 141
+          "start" : 1652682559240,
+          "stop" : 1652682559986,
+          "duration" : 746
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "32394d249cdeb2da",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682560572,
+          "stop" : 1652682560712,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "c0780b53d0ae9a3d",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682560426,
+          "stop" : 1652682560570,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "3077668057e62e90",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682560135,
+          "stop" : 1652682560283,
+          "duration" : 148
         },
         "flaky" : false,
         "newFailed" : false,
@@ -22,14 +74,82 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
       }, {
-        "name" : "test_adminlogin[caseinfo1]",
-        "uid" : "49d99b50c66f1b21",
-        "parentUid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b",
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "e993a1ca8224d10d",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
         "status" : "passed",
         "time" : {
-          "start" : 1652326312222,
-          "stop" : 1652326312365,
-          "duration" : 143
+          "start" : 1652682560285,
+          "stop" : 1652682560424,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "9bff368892b174f7",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682560714,
+          "stop" : 1652682560988,
+          "duration" : 274
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "bfd92adf7415405d",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682559988,
+          "stop" : 1652682560133,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "59f2009daba04306",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682560990,
+          "stop" : 1652682561917,
+          "duration" : 927
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_adminlogin[caseinfo1]",
+        "uid" : "e1c806c473e0c97d",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652682559100,
+          "stop" : 1652682559238,
+          "duration" : 138
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,13 +160,13 @@
         "parameters" : [ "{'name': 'admin登录-密码错误', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]}}" ]
       }, {
         "name" : "test_adminlogin[caseinfo0]",
-        "uid" : "24a4e248ffa9f4c2",
-        "parentUid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b",
+        "uid" : "f306a1cb6ff5cf2e",
+        "parentUid" : "a99af9e72ce27902d1dfe4c04e81e2bd",
         "status" : "passed",
         "time" : {
-          "start" : 1652326312047,
-          "stop" : 1652326312220,
-          "duration" : 173
+          "start" : 1652682558950,
+          "stop" : 1652682559098,
+          "duration" : 148
         },
         "flaky" : false,
         "newFailed" : false,
@@ -55,15 +175,19 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': 'admin登录', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': '$admin_password'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
-      }, {
-        "name" : "test_admin_wallet_add[caseinfo0]",
-        "uid" : "1973d8f8cde298f8",
-        "parentUid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b",
-        "status" : "passed",
+      } ],
+      "uid" : "a99af9e72ce27902d1dfe4c04e81e2bd"
+    }, {
+      "name" : "59054-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "38821642140f63c9",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "failed",
         "time" : {
-          "start" : 1652326312366,
-          "stop" : 1652326313861,
-          "duration" : 1495
+          "start" : 1652687910141,
+          "stop" : 1652687910287,
+          "duration" : 146
         },
         "flaky" : false,
         "newFailed" : false,
@@ -71,16 +195,899 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
       }, {
-        "name" : "test_admin_wallet_add[caseinfo1]",
-        "uid" : "250f041bddf7f550",
-        "parentUid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b",
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "5b2c5ec4da4f0be4",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687910727,
+          "stop" : 1652687911543,
+          "duration" : 816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "8478201d5bb88209",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
         "status" : "passed",
         "time" : {
-          "start" : 1652326313863,
-          "stop" : 1652326314004,
+          "start" : 1652687908752,
+          "stop" : 1652687908904,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "6c21dad3eec2e928",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687908908,
+          "stop" : 1652687909638,
+          "duration" : 730
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "c425e8a360fbcd9b",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687910289,
+          "stop" : 1652687910437,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "d92a9b354369a292",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687909640,
+          "stop" : 1652687909788,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "dd3c6855bf8f07a7",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687910440,
+          "stop" : 1652687910725,
+          "duration" : 285
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "a617cdaf1331358e",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687909936,
+          "stop" : 1652687910139,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "799bca935957f12f",
+        "parentUid" : "d0c3306f67e498947b74eb29f0a312c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687909790,
+          "stop" : 1652687909933,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      } ],
+      "uid" : "d0c3306f67e498947b74eb29f0a312c4"
+    }, {
+      "name" : "60220-MainThread",
+      "children" : [ {
+        "name" : "test_admin_rider_list[caseinfo0]",
+        "uid" : "4b703a4f4f0d1da7",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701522,
+          "stop" : 1652695701669,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin骑手列表', 'request': {'method': 'post', 'path': '/api/admin/rider/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_delete[caseinfo0]",
+        "uid" : "32f5fa041a23350",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695702273,
+          "stop" : 1652695702574,
+          "duration" : 301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin删除骑手', 'request': {'method': 'post', 'path': '/api/admin/rider/delete', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'riderUid': '$id_rider_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "cd9ed0c09e7c6bbd",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695705218,
+          "stop" : 1652695705354,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "407f80748dd78117",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695702576,
+          "stop" : 1652695704406,
+          "duration" : 1830
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_update[caseinfo0]",
+        "uid" : "a014ad2185502f2f",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701969,
+          "stop" : 1652695702271,
+          "duration" : 302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改骑手姓名、身份证和备注', 'request': {'method': 'post', 'path': '/api/admin/rider/update', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'id': '$id_rider_list', 'userName': '$PhoneMain', 'nickName': '$updatenickName', 'idCardCode': '$idCardCode', 'remark': '你以为躲起来就找不到你了吗？没有用的！像你这样出色的男人，无论在什么地方，都像漆黑中的萤火虫一样，那样的鲜明，那样的出众。你那忧郁的眼神，稀嘘的胡喳子，神乎其神的刀法，和那杯Dry Martine，都深深地迷住了我'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "7fe46b9dd0e6e5d5",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695705505,
+          "stop" : 1652695705801,
+          "duration" : 296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "c01c777166b5944a",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701227,
+          "stop" : 1652695701376,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加骑手', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'idCardCode': '$PhoneMain', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "a68c76c28a5d7c13",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652695704408,
+          "stop" : 1652695704554,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo1]",
+        "uid" : "f8e2e120ccb9c600",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701379,
+          "stop" : 1652695701520,
           "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增骑手--重复添加用户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'idCardCode': '$PhoneMain', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 10010}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo3]",
+        "uid" : "488982a68c7e548c",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695704784,
+          "stop" : 1652695704924,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "62a95e37abde70bb",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695705074,
+          "stop" : 1652695705216,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "91702bbecfab4f28",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652695705805,
+          "stop" : 1652695781610,
+          "duration" : 75805
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_list[caseinfo1]",
+        "uid" : "14578fc895e2f28a",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701673,
+          "stop" : 1652695701811,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin骑手列表--通过手机号搜索', 'request': {'method': 'post', 'path': '/api/admin/rider/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo4]",
+        "uid" : "e7983391f130d4eb",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695704927,
+          "stop" : 1652695705071,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "1f52dfe64e1ef88b",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652695704626,
+          "stop" : 1652695704775,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin新增加客户--重复添加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "5820ab7c2baff8fb",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695705356,
+          "stop" : 1652695705503,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 7,
+        "retriesStatusChange" : true,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_list[caseinfo2]",
+        "uid" : "aa8ea27bc61f25c8",
+        "parentUid" : "4efa27764ac9f2674e2f33b06c56a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652695701813,
+          "stop" : 1652695701967,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin骑手列表--通过身份证搜索', 'request': {'method': 'post', 'path': '/api/admin/rider/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'idCardCode': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "4efa27764ac9f2674e2f33b06c56a98c"
+    }, {
+      "name" : "58920-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "6704c3c26fffc4a8",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687235538,
+          "stop" : 1652687235677,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "e12f301dab81c612",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687236127,
+          "stop" : 1652687236425,
+          "duration" : 298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "7952693edf7585a8",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687235391,
+          "stop" : 1652687235536,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "2d389a9b1f6e55c2",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687234438,
+          "stop" : 1652687234585,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "a114b83a3b85fbac",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687235825,
+          "stop" : 1652687235973,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "81b1a2658d4d8289",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687235976,
+          "stop" : 1652687236124,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "2669978d136a179",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687235679,
+          "stop" : 1652687235823,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "d6e5775c54c07e36",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687236427,
+          "stop" : 1652687237288,
+          "duration" : 861
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "295d9d20b02c17b4",
+        "parentUid" : "eb955d6e14f80e848dc87b616656cdec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652687234587,
+          "stop" : 1652687235389,
+          "duration" : 802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "eb955d6e14f80e848dc87b616656cdec"
+    }, {
+      "name" : "59428-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "c267a50b07ada984",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690396651,
+          "stop" : 1652690396789,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "ef0160ae51dd0184",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690394889,
+          "stop" : 1652690395559,
+          "duration" : 670
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "faade8b1974c0cb7",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690395561,
+          "stop" : 1652690396497,
+          "duration" : 936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "6245b8ca4362d721",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690397731,
+          "stop" : 1652690399057,
+          "duration" : 1326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "b77032c441ab03bd",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690396793,
+          "stop" : 1652690396938,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "ee58eec7ef08505",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690396499,
+          "stop" : 1652690396649,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "185728435f6b4252",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690399059,
+          "stop" : 1652690404004,
+          "duration" : 4945
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "8aa9d7d848be67cc",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690397077,
+          "stop" : 1652690397729,
+          "duration" : 652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "d7aadf7a9e876478",
+        "parentUid" : "b34dbe3fe3307dde332452d01a127bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652690396940,
+          "stop" : 1652690397075,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "b34dbe3fe3307dde332452d01a127bb5"
+    }, {
+      "name" : "58896-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "591e6b726dce10fd",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181045,
+          "stop" : 1652687181045,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "821719929622fcee",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181056,
+          "stop" : 1652687181056,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "23eeec8f75f74531",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181048,
+          "stop" : 1652687181048,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "76f96249970b6f33",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181059,
+          "stop" : 1652687181059,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "9858fa28940a9386",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181040,
+          "stop" : 1652687181040,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "2d05ef28f7d99e46",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181035,
+          "stop" : 1652687181035,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "87bf5040dfe6ab41",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181050,
+          "stop" : 1652687181050,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "2f86d0a7400d43a8",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181053,
+          "stop" : 1652687181053,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "4d621919e6b24fe2",
+        "parentUid" : "35b61f5c50900586580490337d4e8f53",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652687181042,
+          "stop" : 1652687181042,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
@@ -90,9 +1097,356 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
       } ],
-      "uid" : "ad5f481f8c0273ed9fd3d1df0b5eb26b"
+      "uid" : "35b61f5c50900586580490337d4e8f53"
+    }, {
+      "name" : "58817-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "1a1238e63242d78c",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729490,
+          "stop" : 1652686729633,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "6771c6a9e584388e",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686730209,
+          "stop" : 1652686731291,
+          "duration" : 1082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "8857489251ba25b3",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729347,
+          "stop" : 1652686729488,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "7ff545b3388031e8",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729777,
+          "stop" : 1652686729916,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "fc6b85bcca65b984",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729191,
+          "stop" : 1652686729345,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "dbc65e3d34812762",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729635,
+          "stop" : 1652686729775,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "3f8d69ed599cc50",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686726586,
+          "stop" : 1652686726732,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "78c115b58b1c3fde",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686729918,
+          "stop" : 1652686730207,
+          "duration" : 289
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_adminlogin[caseinfo1]",
+        "uid" : "9a262f229625551",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686727874,
+          "stop" : 1652686728029,
+          "duration" : 155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin登录-密码错误', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': 0}, 'validate': [{'equal_to': {'$.code': 10003}}]}}" ]
+      }, {
+        "name" : "test_adminlogin[caseinfo0]",
+        "uid" : "72d3ceabf5197232",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686726735,
+          "stop" : 1652686727872,
+          "duration" : 1137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin登录', 'request': {'method': 'post', 'path': '/api/admin/login', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json'}, 'params': {'userName': '$admin_username', 'password': '$admin_password'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "f18e17082346f05f",
+        "parentUid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652686728031,
+          "stop" : 1652686729189,
+          "duration" : 1158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "ed8e8ea5825465f899b3e8f8d0e6f6c6"
+    }, {
+      "name" : "59391-MainThread",
+      "children" : [ {
+        "name" : "test_admin_wallet_add[caseinfo2]",
+        "uid" : "d2331e5c0df6b45c",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689934573,
+          "stop" : 1652689934715,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--优惠金额couponAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': 20, 'couponAmt': -2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_recharge[caseinfo0]",
+        "uid" : "8eb5378d2ca8ca6",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652689935431,
+          "stop" : 1652689939507,
+          "duration" : 4076
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值接口', 'request': {'method': 'post', 'path': '/api/admin/wallet/recharge', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'addActualAmt': '10', 'addCouponAmt': '0', 'id': '$id_wallet_list', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_edit[caseinfo0]",
+        "uid" : "809e68d6382eccb8",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689935143,
+          "stop" : 1652689935429,
+          "duration" : 286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo0]",
+        "uid" : "ad454ce0790d9cf9",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689929416,
+          "stop" : 1652689934426,
+          "duration" : 5010
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': '$actualAmt', 'couponAmt': '$couponAmt', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_add[caseinfo1]",
+        "uid" : "c49dd485524dad1d",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689934429,
+          "stop" : 1652689934571,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户--充值金额actualAmt为负数', 'request': {'method': 'post', 'path': '/api/admin/wallet/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'actualAmt': -20, 'couponAmt': 2, 'remark': 'fffffffffff'}, 'validate': [{'equal_to': {'$.code': 400}}]}}" ]
+      }, {
+        "name" : "test_admin_rider_add[caseinfo0]",
+        "uid" : "7827bb74890f56d8",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689929265,
+          "stop" : 1652689929413,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin新增加客户', 'request': {'method': 'post', 'path': '/api/admin/rider/add', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'userName': '$PhoneMain', 'nickName': '$updatenickName', 'remark': '!@#$%^&*()_+/*-+0123457Qwqeer提前淘汰请求他v《。；、。/,./;\\\\[][]【】{}:\"|>?<'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo0]",
+        "uid" : "9c46db36e977683a",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689934717,
+          "stop" : 1652689934859,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_log_list[caseinfo0]",
+        "uid" : "81ec6ad0ca6b36dc",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689935000,
+          "stop" : 1652689935141,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin充值记录', 'request': {'method': 'post', 'path': '/api/admin/wallet/log/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'bizType': 1, 'userId': '$id_wallet_list', 'userName': '$PhoneMain', 'nextPageId': ''}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      }, {
+        "name" : "test_admin_wallet_list[caseinfo1]",
+        "uid" : "1ff906608b55e758",
+        "parentUid" : "c971b67e529c2f04d29e613116c4fdd3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652689934861,
+          "stop" : 1652689934998,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': 'admin客户钱包列表--搜索', 'request': {'method': 'post', 'path': '/api/admin/wallet/list', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'pageSize': 10, 'nextPageId': '', 'userName': '$PhoneMain'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+      } ],
+      "uid" : "c971b67e529c2f04d29e613116c4fdd3"
     } ],
     "uid" : "a134c4636f82a6180f7a698ebc9ed6d5"
-  } ],
-  "name" : "timeline"
+  } ]
 }

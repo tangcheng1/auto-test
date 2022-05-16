@@ -1,0 +1,122 @@
+{
+  "uid" : "e12f301dab81c612",
+  "name" : "test_admin_wallet_edit[caseinfo0]",
+  "fullName" : "test_case.test_admin.admin_wallet_add_test#test_admin_wallet_edit",
+  "historyId" : "3e9bc60298215d8f62fdc3146d33a16c",
+  "time" : {
+    "start" : 1652687236127,
+    "stop" : 1652687236425,
+    "duration" : 298
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "test_adminlogin",
+    "time" : {
+      "start" : 1652687234259,
+      "stop" : 1652687234437,
+      "duration" : 178
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1652687234259,
+      "stop" : 1652687234259,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ebc390ea98dc6eff",
+      "name" : "log",
+      "source" : "ebc390ea98dc6eff.txt",
+      "type" : "text/plain",
+      "size" : 5064
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "clear_yaml::0",
+    "time" : {
+      "start" : 1652687237289,
+      "stop" : 1652687237289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "admin修改客户姓名和备注"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_admin"
+  }, {
+    "name" : "suite",
+    "value" : "admin_wallet_add_test"
+  }, {
+    "name" : "host",
+    "value" : "xudeMac-mini.local"
+  }, {
+    "name" : "thread",
+    "value" : "58920-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_admin.admin_wallet_add_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e12f301dab81c612.json",
+  "parameterValues" : [ "{'name': 'admin修改客户姓名和备注', 'request': {'method': 'post', 'path': '/api/admin/wallet/edit', 'headers': {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) \"\"Chrome/54.0.2840.99 Safari/537.36', 'deviceId': '1254', 'Content-Type': 'application/json', 'token': '$amintoken'}, 'params': {'nickName': '$updatenickName', 'remark': 'fffffffffff', 'id': '$id_wallet_list'}, 'validate': [{'equal_to': {'$.code': 1}}]}}" ]
+}
