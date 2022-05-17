@@ -1,30 +1,41 @@
 {
-  "total" : 10,
+  "total" : 15,
   "items" : [ {
-    "uid" : "7e9fd5286e211b2a767fba45ac135ee2",
-    "name" : "admin新增客户",
+    "uid" : "556f5e932c9cf04c831aa0be38f75930",
+    "name" : "骑手扣减用户金额",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 1,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 5
-    }
-  }, {
-    "uid" : "81ed4f6236293cd56bb8044cf72fb6ad",
-    "name" : "admin充值接口",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }
   }, {
+    "uid" : "7e9fd5286e211b2a767fba45ac135ee2",
+    "name" : "admin新增客户",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
     "uid" : "3823014342bd034baa825515af020217",
     "name" : "admin骑手列表",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "047c54234c5a64be72e976f82bb8f5eb",
+    "name" : "检查用户手机号，查询用户昵称信息",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -67,41 +78,30 @@
       "total" : 2
     }
   }, {
+    "uid" : "d926bcdc6c29dca87d490e3ceadf981c",
+    "name" : "骑手登录接口",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "68d557d7a0ebd0fbdc753a3d3bc73c3c",
+    "name" : "判断金额是否足够，同时计算出余额和优惠金额的扣除明细",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "a11331703a322411b4d36bcc0435695a",
     "name" : "admin骑手信息编辑",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "2aa30ea1cf25bed44934c9240608e847",
-    "name" : "admin删除骑手",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "baee5e870759c81faf675f848e39cece",
-    "name" : "admin充值记录",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "522538ce4a1f28e2d21a96f4ca5aff2c",
-    "name" : "admin修改客户姓名和备注",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

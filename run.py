@@ -4,13 +4,12 @@
 # @Author  : tc
 # @File    : run.py
 # @Description :
-import os
-import time
 
-import pytest,os,subprocess
-import  allure
+import os
+import pytest
+
 from tools.logger import logger
-from pathlib import Path
+
 
 def init_report():
 
@@ -36,5 +35,5 @@ def init_report():
 
 
 if __name__ == '__main__':
-    pytest.main(["-vs", "test_case/test_admin", "--alluredir=report/data"])
+    pytest.main(["-vs", "test_case/test_rider", "--alluredir=report/data"])
     init_report()

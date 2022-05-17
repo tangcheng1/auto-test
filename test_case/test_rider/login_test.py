@@ -38,8 +38,7 @@ class Testlogin:
         value = caseinfo['request']
         # 更新需要参数化的万能验证码，完成接口关联
         # 读取extract.yaml文件，替换掉login.yaml中需要参数化的变量，这里是将万能验证码的值传入到验证码smsCode中
-        extract = YamlUtil().yaml_read("data_yaml", "extract.yaml")
-        yaml_data = YamlUtil.extractdata_render_params(extract,value)
+        yaml_data = YamlUtil.extractdata_render_params(value)
         validate = value["validate"] if "validate" in value else None
         response = Utils.sendRequest(caseinfo['name'],yaml_data['method'], yaml_data['path'], yaml_data['params'], yaml_data['headers'])
         if "token" in str(response):

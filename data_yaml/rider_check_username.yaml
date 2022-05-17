@@ -9,7 +9,7 @@
       Content-Type: application/json
       token: $token
     params:
-      userName: '13720235230'
+      userName: $WalletUserName
 
     validate:
       - equal_to:

@@ -32,7 +32,7 @@ class Utils:
             body = json.dumps(params)
             rep = request(method=method, url=url, data=body, headers=headers, **kwargs)
         # 打印请求前日志
-        logger.info("---------------接口测试开始---------------")
+        # logger.info("---------------接口测试开始---------------")
         Utils.request_log(name, method, url, params, headers)
         logger.info("实际结果:{}".format(rep.json()))
         return rep.json()
@@ -51,7 +51,7 @@ class Utils:
                         assert actual_val == item_expect
                     else:
                         logger.info("-------暂时不支持该断言方法---------")
-        logger.info("---------------接口测试结束---------------\n")
+        # logger.info("---------------接口测试结束---------------\n")
 
     @staticmethod
     def request_log(name, method, url, data=None, headers=None, files=None, cookies=None, **kwargs):

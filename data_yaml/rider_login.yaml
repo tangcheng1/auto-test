@@ -9,7 +9,7 @@
       Content-Type: application/json
     params:
       smsCode: $smsCode
-      userName: '15400010001'
+      userName: $RiderUserName
 
     validate:
        - equal_to:
@@ -25,7 +25,7 @@
       Content-Type: application/json
     params:
       smsCode: 'qwe'
-      userName: '15400010001'
+      userName: $RiderUserName
 
     validate:
       - equal_to:

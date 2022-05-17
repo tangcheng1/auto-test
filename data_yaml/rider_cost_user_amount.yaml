@@ -1,7 +1,7 @@
 -
   name: 骑手扣减用户金额
   request:
-    method: get
+    method: post
     path: /api/rider/cost/user/amount
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) ""Chrome/54.0.2840.99 Safari/537.36
@@ -11,7 +11,7 @@
     params:
       id: $id
       orderAmt: '20'
-      userName: '13720235230'
+      userName: $WalletUserName
 
     validate:
       - equal_to:

@@ -12,7 +12,7 @@
     params:
       id: $id
       orderAmt: '20'
-      userName: '13720235230'
+      userName: $WalletUserName
 
     validate:
       - equal_to:
@@ -31,7 +31,7 @@
     params:
       id: $id
       orderAmt: -20
-      userName: '13720235230'
+      userName: $WalletUserName
 
     validate:
       - equal_to:

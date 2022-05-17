@@ -1,13 +1,24 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "32d59fd8ccfdfe19c6ded281e5fbc365",
+    "name" : "test_case.test_rider",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
     "uid" : "fa4b7f06c1d4ffa421ef59d519112e94",
     "name" : "test_case.test_admin",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 1,
+      "failed" : 0,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 16,
+      "passed" : 19,
       "unknown" : 0,
       "total" : 19
     }
